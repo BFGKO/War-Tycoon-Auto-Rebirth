@@ -78,7 +78,6 @@ function Robber:FindRobbableTycoon()
     rootPart.Anchored = false
 
     rootPart.CFrame = startCFrame
-    standPart:Destroy()
 end
 
 function Robber:RobTycoon(tycoon : Model)
