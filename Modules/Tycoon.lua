@@ -1,5 +1,7 @@
 local players = game:GetService("Players")
 local player = players.LocalPlayer
+local rebirths = player.leaderstats.Rebirths
+
 local Tycoon = {}
 
 
@@ -27,6 +29,11 @@ function Tycoon:GetCheapestItem() : Model
         if not price or isGamepass then
             continue
         end
+        local haveEnoughRebirths = rebirths.Value >= item:GetAttribute("Rebirth")
+        if not haveEnoughRebirths then
+            continue
+        end
+
         if price < cheapest.price then
             cheapest.price = price
             cheapest.item = item
@@ -55,6 +62,10 @@ function Tycoon:CollectCash()
     local collectButton = giver:WaitForChild("CollectButton")
 
     local teleportPosition = collectButton.Position + Vector3.yAxis * 5
+
+    firetouchinterest(collectButton, rootPart, 0)
+    task.wait()
+    firetouchinterest(collectButton, rootPart, 1)
 
     rootPart.CFrame = CFrame.new(teleportPosition)
     task.wait(0.25)
