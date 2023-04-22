@@ -24,6 +24,8 @@ local tycoon = GetModule("Tycoon")
 local eventManager = GetModule("EventManager")
 local autoFarm = GetModule("Robber")
 
+autoFarm:LoadAllTycoons()
+
 tycoon:GetTycoon()
 local stopped
 eventManager:AddEvent("PlayerChattedWhileLoopStop", player.Chatted, function(message)

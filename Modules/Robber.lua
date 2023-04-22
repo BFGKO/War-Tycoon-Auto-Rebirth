@@ -30,7 +30,7 @@ function Robber:LoadAllTycoons()
 
         rootPart.CFrame = tycoon.WorldPivot  + Vector3.new(0, 250, 0)
         standPart.Position = (tycoon.WorldPivot  + Vector3.new(0, 245, 0)).Position
-        task.wait(3)
+        task.wait(5)
     end
 
     standPart:Destroy()
