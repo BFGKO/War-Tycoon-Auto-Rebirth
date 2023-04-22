@@ -29,6 +29,10 @@ function Tycoon:GetCheapestItem() : Model
             cheapest.price = price
             cheapest.item = item
         end
+
+        if item.Name:match("Worker") then
+            return item
+        end
     end
 
     return cheapest.item
@@ -37,7 +41,6 @@ end
 function Tycoon:BuyItem(item : Model)
 
     local buyEvent : RemoteFunction = self.tycoon.BuyButton
-
     buyEvent:InvokeServer(item.Name)
 end
 
@@ -54,7 +57,6 @@ function Tycoon:CollectCash()
     rootPart.CFrame = CFrame.new(teleportPosition)
 end
 
-print(Tycoon:GetTycoon())
 
 
 return Tycoon
