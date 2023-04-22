@@ -32,7 +32,14 @@ tycoon:GetTycoon()
 
 local function Rejoin()
     print("Server hopping")
-    queue_on_teleport("task.wait(15)\n"..game:HttpGet("https://raw.githubusercontent.com/BFGKO/War-Tycoon-Auto-Rebirth/master/Main.lua"))
+    local string2 = [[
+
+    local ohString1 = "Morocco"
+    
+    game:GetService("ReplicatedStorage").Packages.Knit.Services.TycoonService.RF.Select:InvokeServer(ohString1)
+
+game:GetService("ReplicatedStorage").Packages.Knit.Services.TycoonService.RF.Select:InvokeServer(ohString1)]]
+    queue_on_teleport("task.wait(15)\n"..string2..game:HttpGet("https://raw.githubusercontent.com/BFGKO/War-Tycoon-Auto-Rebirth/master/Main.lua"))
     serverHopper:Hop(game.PlaceId)
 end
 
