@@ -22,6 +22,7 @@ local moneyUi = playingScene:WaitForChild("Money"):WaitForChild("Cash"):WaitForC
 
 local tycoon = GetModule("Tycoon")
 local eventManager = GetModule("EventManager")
+local autoFarm = GetModule("Robber")
 
 tycoon:GetTycoon()
 local stopped
@@ -32,12 +33,16 @@ eventManager:AddEvent("PlayerChattedWhileLoopStop", player.Chatted, function(mes
     end
 end)
 while not stopped do
-    task.wait(1)
+    task.wait(0.25)
     local cheapestItem : Model = tycoon:GetCheapestItem()
     local cost : number = cheapestItem:GetAttribute("Price")
     local money : string = moneyUi.Text
     money = money:gsub(",", "")
     if cost > tonumber(money) then
+        local closestTycoon = autoFarm:FindRobbableTycoon()
+        if closestTycoon then
+            autoFarm:RobTycoon(closestTycoon)
+        end
         tycoon:CollectCash()
         continue
     else

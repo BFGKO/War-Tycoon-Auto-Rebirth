@@ -55,6 +55,7 @@ function Tycoon:CollectCash()
     local teleportPosition = collectButton.Position + Vector3.yAxis * 5
 
     rootPart.CFrame = CFrame.new(teleportPosition)
+    task.wait(0.25)
 end
 
 
