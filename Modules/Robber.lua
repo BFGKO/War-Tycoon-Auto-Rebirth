@@ -65,8 +65,8 @@ function Robber:FindRobbableTycoon()
         
         local unlocks = tycoon:WaitForChild("Unlocks")
 
-        local vaultRoom1 = unlocks:WaitForChild("VaultRoom1")
-        if not vaultRoom1:FindFirstChild("Cooldown") then
+        local vaultRoom1 = unlocks:FindFirstChild("VaultRoom1")
+        if not vaultRoom1 or not vaultRoom1:FindFirstChild("Cooldown") then
             continue
         end
         local cooldownGui = vaultRoom1.Cooldown.SurfaceGui.Frame.Time
@@ -133,6 +133,6 @@ function Robber:RobTycoon(tycoon : Model)
     rootPart.CFrame = self.startCFrame
 end
 
--- Robber:RobTycoon( Robber:FindRobbableTycoon() )
+Robber:RobTycoon( Robber:FindRobbableTycoon() )
 
 return Robber
