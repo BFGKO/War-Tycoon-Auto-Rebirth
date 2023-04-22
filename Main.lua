@@ -33,15 +33,15 @@ eventManager:AddEvent("PlayerChattedWhileLoopStop", player.Chatted, function(mes
 end)
 while not stopped do
     task.wait(1)
-    local cheapestItem = tycoon:GetCheapestItem()
-    local cost = cheapestItem:GetAttribute("Price")
+    local cheapestItem : Model = tycoon:GetCheapestItem()
+    local cost : number = cheapestItem:GetAttribute("Price")
     local money : string = moneyUi.Text
     money = money:gsub(",", "")
-    print(cost, money)
     if cost > tonumber(money) then
         tycoon:CollectCash()
         continue
     else
+        print("buying", cheapestItem:GetAttribute("DisplayName"), "for", cost)
         tycoon:BuyItem(cheapestItem)
     end
 end
