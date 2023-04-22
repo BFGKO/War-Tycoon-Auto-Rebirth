@@ -75,7 +75,7 @@ function Robber:RobTycoon(tycoon : Model)
     firetouchinterest(raid, rootPart, 0)
     task.wait()
     firetouchinterest(raid, rootPart, 1)
-
+    
     task.wait(1)
     
     local unlocks = tycoon:WaitForChild("Unlocks")
