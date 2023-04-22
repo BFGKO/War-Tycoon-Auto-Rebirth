@@ -37,26 +37,29 @@ eventManager:AddEvent("PlayerChattedWhileLoopStop", player.Chatted, function(mes
 end)
 while not stopped do
     task.wait(0.25)
-    local cheapestItem : Model = tycoon:GetCheapestItem()
-    if not cheapestItem then
-        ReplicatedStorage.LocalRebirth:FireServer()
-    end
-
-    local cost : number = cheapestItem:GetAttribute("Price")
-    local money : string = moneyUi.Text
-    money = money:gsub(",", "")
-    if cost > tonumber(money) then
-        local robbableTycoon = autoFarm:FindRobbableTycoon()
-        if robbableTycoon then
-            autoFarm:RobTycoon(robbableTycoon)
+    pcall(function()
+        local cheapestItem : Model = tycoon:GetCheapestItem()
+        if not cheapestItem then
+            ReplicatedStorage.LocalRebirth:FireServer()
         end
-        tycoon:CollectCash()
-        task.wait(0.5)
-        continue
-    else
-        print("buying", cheapestItem:GetAttribute("DisplayName"), "for", cost)
-        tycoon:BuyItem(cheapestItem)
-    end
+    
+        local cost : number = cheapestItem:GetAttribute("Price")
+        local money : string = moneyUi.Text
+        money = money:gsub(",", "")
+        if cost > tonumber(money) then
+            local robbableTycoon = autoFarm:FindRobbableTycoon()
+            if robbableTycoon then
+                autoFarm:RobTycoon(robbableTycoon)
+            end
+            tycoon:CollectCash()
+            task.wait(1.5)
+            return
+        else
+            print("buying", cheapestItem:GetAttribute("DisplayName"), "for", cost)
+            tycoon:BuyItem(cheapestItem)
+        end
+        
+    end)
 end
 
 eventManager:StopAll()
