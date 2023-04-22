@@ -1,4 +1,5 @@
 local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local function GetModule(moduleName : string)
     local url = "https://raw.githubusercontent.com/BFGKO/War-Tycoon-Auto-Rebirth/master/Modules/%s.lua"
     url = url:format(moduleName)
@@ -37,6 +38,10 @@ end)
 while not stopped do
     task.wait(0.25)
     local cheapestItem : Model = tycoon:GetCheapestItem()
+    if not cheapestItem then
+        ReplicatedStorage.LocalRebirth:FireServer()
+    end
+
     local cost : number = cheapestItem:GetAttribute("Price")
     local money : string = moneyUi.Text
     money = money:gsub(",", "")

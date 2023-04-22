@@ -29,9 +29,12 @@ function Tycoon:GetCheapestItem() : Model
         if not price or isGamepass then
             continue
         end
-        local haveEnoughRebirths = rebirths.Value >= item:GetAttribute("Rebirth")
-        if not haveEnoughRebirths then
-            continue
+        local neededRebirths = item:GetAttribute("Rebirth")
+        if neededRebirths then
+            local haveEnoughRebirths = rebirths.Value >= neededRebirths
+            if not haveEnoughRebirths then
+                continue
+            end
         end
 
         if price < cheapest.price then
