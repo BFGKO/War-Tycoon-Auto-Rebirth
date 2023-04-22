@@ -21,9 +21,17 @@ local playingScene = playerGui:WaitForChild("PlayingScene")
 local moneyUi = playingScene:WaitForChild("Money"):WaitForChild("Cash"):WaitForChild("Meter")
 
 local tycoon = GetModule("Tycoon")
+local eventManager = GetModule("EventManager")
 
 tycoon:GetTycoon()
-while true do
+local stopped
+eventManager:AddEvent("PlayerChattedWhileLoopStop", player.Chatted, function(message)
+    print(message)
+    if message == "/e stop" then
+        stopped = true
+    end
+end)
+while not stopped do
     task.wait(1)
     local cheapestItem = tycoon:GetCheapestItem()
     local cost = cheapestItem:GetAttribute("Price")
@@ -31,11 +39,11 @@ while true do
     money = money:gsub(",", "")
     print(cost, money)
     if cost > tonumber(money) then
-        
         tycoon:CollectCash()
         continue
     else
         tycoon:BuyItem(cheapestItem)
     end
-
 end
+
+eventManager:StopAll()

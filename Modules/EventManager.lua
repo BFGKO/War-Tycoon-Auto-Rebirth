@@ -41,7 +41,7 @@ end
 
 function Manager:StopAll()
     for i,event in pairs(self.events) do
-        self:StopEvent(i)
+        event["function"]:Disconnect()
     end
 end
 
