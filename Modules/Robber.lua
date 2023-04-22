@@ -1,4 +1,5 @@
 local Debris = game:GetService("Debris")
+local LocalizationService = game:GetService("LocalizationService")
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 
@@ -38,13 +39,6 @@ function Robber:FindRobbableTycoon()
     local startCFrame = rootPart.CFrame
     self.startCFrame = startCFrame
 
-    local standPart = Instance.new("Part")
-    standPart.Size = Vector3.new(50, 1, 50)
-    standPart.Anchored = true
-    standPart.Parent = workspace
-    standPart.Material = Enum.Material.SmoothPlastic
-    standPart.Transparency = 0.5
-
     local tycoons : Model = workspace.PlayerTycoons
     for i,tycoon : Model in pairs(tycoons:GetChildren()) do
         local ownerId = tycoon:GetAttribute("Player")
@@ -78,7 +72,6 @@ function Robber:FindRobbableTycoon()
             continue
         else
             print(ownerName, cooldownGui.Text)
-            Debris:AddItem(standPart, 3)
             return tycoon
         end
     end
@@ -93,11 +86,25 @@ function Robber:RobTycoon(tycoon : Model)
     local rootPart = character:WaitForChild("HumanoidRootPart")
 
     local raid = tycoon:WaitForChild("Raid")
-    
+
+    local ownerDoors = {}
+    for i,ownerDoor : Model in pairs(tycoon.Unlocks:GetChildren()) do
+        local target = ownerDoor:FindFirstChild("Target")
+        if not target then continue end
+        ownerDoors[#ownerDoors+1] = ownerDoor
+        ownerDoor.Parent = nil
+    end
+
+
+    rootPart.CFrame = raid.CFrame
+    rootPart.Anchored = true
+
     firetouchinterest(raid, rootPart, 0)
-    task.wait()
+    task.wait(0.1)
     firetouchinterest(raid, rootPart, 1)
-    
+    print("Activated raid")
+    rootPart.Anchored = false
+
     task.wait(1)
     
     local unlocks = tycoon:WaitForChild("Unlocks")
@@ -131,6 +138,10 @@ function Robber:RobTycoon(tycoon : Model)
     end
     rootPart.Anchored = false
     rootPart.CFrame = self.startCFrame
+
+    for i,ownerDoor in pairs(ownerDoors) do
+        ownerDoor.Parent = tycoon.Unlocks
+    end
 end
 
 Robber:RobTycoon( Robber:FindRobbableTycoon() )
