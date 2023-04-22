@@ -53,6 +53,5 @@ function hopper:Hop(placeId)
     end
 end
 
-hopper:Hop(game.PlaceId)
 
 return hopper
