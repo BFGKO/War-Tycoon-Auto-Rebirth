@@ -46,6 +46,7 @@ while not stopped do
             autoFarm:RobTycoon(robbableTycoon)
         end
         tycoon:CollectCash()
+        task.wait(0.5)
         continue
     else
         print("buying", cheapestItem:GetAttribute("DisplayName"), "for", cost)
