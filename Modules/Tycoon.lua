@@ -2,6 +2,8 @@ local players = game:GetService("Players")
 local player = players.LocalPlayer
 local Tycoon = {}
 
+
+
 function Tycoon:GetTycoon()
     local tycoons = workspace.PlayerTycoons
     for i, tycoon:Model in pairs(tycoons:GetChildren()) do

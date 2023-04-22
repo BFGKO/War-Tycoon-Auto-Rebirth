@@ -5,6 +5,37 @@ local player = Players.LocalPlayer
 
 local Robber = {}
 
+function Robber:LoadAllTycoons()
+    local standPart = Instance.new("Part")
+    standPart.Size = Vector3.new(50, 1, 50)
+    standPart.Anchored = true
+    standPart.Parent = workspace
+    standPart.Material = Enum.Material.SmoothPlastic
+    standPart.Transparency = 0.5
+
+
+    local character = player.Character
+    local rootPart = character:WaitForChild("HumanoidRootPart")
+
+    local startCFrame = rootPart.CFrame
+
+    local tycoons : Model = workspace.PlayerTycoons
+    for i,tycoon : Model in pairs(tycoons:GetChildren()) do
+        local ownerId = tycoon:GetAttribute("Player")
+        local ownerName = tycoon:GetAttribute("PlayerName")
+        
+        if ownerId == player.UserId then
+            continue
+        end
+
+        rootPart.CFrame = tycoon.WorldPivot  + Vector3.new(0, 250, 0)
+        standPart.Position = (tycoon.WorldPivot  + Vector3.new(0, 245, 0)).Position
+        task.wait(3)
+    end
+
+    standPart:Destroy()
+    rootPart.CFrame = startCFrame
+end
 
 function Robber:FindRobbableTycoon()
     local character = player.Character
@@ -29,9 +60,6 @@ function Robber:FindRobbableTycoon()
             continue
         end
 
-        rootPart.CFrame = tycoon.WorldPivot  + Vector3.new(0, 250, 0)
-        standPart.Position = (tycoon.WorldPivot  + Vector3.new(0, 245, 0)).Position
-        task.wait(3)
         local hasBunker = tycoon:FindFirstChild("Raid")
         if not hasBunker then
             print(ownerName, "doesnt have bunker")
@@ -112,6 +140,6 @@ function Robber:RobTycoon(tycoon : Model)
     rootPart.CFrame = self.startCFrame
 end
 
-Robber:RobTycoon( Robber:FindRobbableTycoon() )
+-- Robber:RobTycoon( Robber:FindRobbableTycoon() )
 
 return Robber
