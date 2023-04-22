@@ -41,9 +41,9 @@ while not stopped do
     local money : string = moneyUi.Text
     money = money:gsub(",", "")
     if cost > tonumber(money) then
-        local closestTycoon = autoFarm:FindRobbableTycoon()
-        if closestTycoon then
-            autoFarm:RobTycoon(closestTycoon)
+        local robbableTycoon = autoFarm:FindRobbableTycoon()
+        if robbableTycoon then
+            autoFarm:RobTycoon(robbableTycoon)
         end
         tycoon:CollectCash()
         continue

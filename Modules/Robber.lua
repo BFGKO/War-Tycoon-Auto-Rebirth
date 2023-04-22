@@ -5,7 +5,7 @@ local player = Players.LocalPlayer
 
 local Robber = {}
 
-function Robber:LoadAllTycoons()
+function Robber:LoadTycoon(tycoon : Model)
     local standPart = Instance.new("Part")
     standPart.Size = Vector3.new(50, 1, 50)
     standPart.Anchored = true
@@ -17,24 +17,18 @@ function Robber:LoadAllTycoons()
     local character = player.Character
     local rootPart = character:WaitForChild("HumanoidRootPart")
 
-    local startCFrame = rootPart.CFrame
+    local pivot = tycoon.WorldPivot
 
-    local tycoons : Model = workspace.PlayerTycoons
-    for i,tycoon : Model in pairs(tycoons:GetChildren()) do
-        local ownerId = tycoon:GetAttribute("Player")
-        local ownerName = tycoon:GetAttribute("PlayerName")
-        
-        if ownerId == player.UserId then
-            continue
-        end
+    rootPart.Anchored = true
 
-        rootPart.CFrame = tycoon.WorldPivot  + Vector3.new(0, 250, 0)
-        standPart.Position = (tycoon.WorldPivot  + Vector3.new(0, 245, 0)).Position
-        task.wait(5)
-    end
+    rootPart.CFrame = pivot + Vector3.new(0, 250, 0)
+
+    local startTime = tick()
+    repeat
+        task.wait(0.1)
+    until tycoon:FindFirstChild("Raid") or tick() >= startTime+5
 
     standPart:Destroy()
-    rootPart.CFrame = startCFrame
 end
 
 function Robber:FindRobbableTycoon()
@@ -59,6 +53,8 @@ function Robber:FindRobbableTycoon()
         if ownerId == player.UserId then
             continue
         end
+
+        self:LoadTycoon(tycoon)
 
         local hasBunker = tycoon:FindFirstChild("Raid")
         if not hasBunker then
@@ -96,8 +92,6 @@ function Robber:RobTycoon(tycoon : Model)
     local character = player.Character
     local rootPart = character:WaitForChild("HumanoidRootPart")
 
-
-    
     local raid = tycoon:WaitForChild("Raid")
     
     firetouchinterest(raid, rootPart, 0)
@@ -125,7 +119,6 @@ function Robber:RobTycoon(tycoon : Model)
             continue
         end
         pcall(function()
-            
             local attachment : Attachment = enabled:FindFirstChild("HackAttachment")
             local proximityPrompt = attachment:FindFirstChildOfClass("ProximityPrompt")
     
@@ -134,7 +127,7 @@ function Robber:RobTycoon(tycoon : Model)
             fireproximityprompt(proximityPrompt, 1, true)
         end)
 
-        task.wait(.25)
+        task.wait(.5)
     end
     rootPart.Anchored = false
     rootPart.CFrame = self.startCFrame
