@@ -21,7 +21,7 @@ end
 
 function hopper:Hop(placeId)
     if not isfile(fileName) then
-        writefile(fileName, "")
+        writefile(fileName, "{}")
     end
 
     local url = "https://games.roblox.com/v1/games/%d/servers/0?sortOrder=2&excludeFullGames=true&limit=100"
@@ -52,5 +52,7 @@ function hopper:Hop(placeId)
         break
     end
 end
+
+hopper:Hop(game.PlaceId)
 
 return hopper
