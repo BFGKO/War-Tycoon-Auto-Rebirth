@@ -58,6 +58,7 @@ while not stopped do
         money = money:gsub(",", "")
         if cost > tonumber(money) then
             local robbableTycoon = autoFarm:FindRobbableTycoon()
+            print("robableTycoon =", robbableTycoon)
             if robbableTycoon then
                 autoFarm:RobTycoon(robbableTycoon)
             else

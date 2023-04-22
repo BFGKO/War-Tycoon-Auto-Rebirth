@@ -47,6 +47,4 @@ function hopper:Hop(placeId)
     end
 end
 
-hopper:Hop(7180042682)
-
 return hopper
