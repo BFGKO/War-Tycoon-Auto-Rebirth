@@ -42,6 +42,8 @@ while not stopped do
         if not cheapestItem then
             ReplicatedStorage.LocalRebirth:FireServer()
         end
+
+        print(cheapestItem:GetAttribute("DisplayName"))
     
         local cost : number = cheapestItem:GetAttribute("Price")
         local money : string = moneyUi.Text
