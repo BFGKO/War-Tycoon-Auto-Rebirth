@@ -1,5 +1,6 @@
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local TeleportService = game:GetService("TeleportService")
 local function GetModule(moduleName : string)
     local url = "https://raw.githubusercontent.com/BFGKO/War-Tycoon-Auto-Rebirth/master/Modules/%s.lua"
     url = url:format(moduleName)
@@ -24,9 +25,16 @@ local moneyUi = playingScene:WaitForChild("Money"):WaitForChild("Cash"):WaitForC
 local tycoon = GetModule("Tycoon")
 local eventManager = GetModule("EventManager")
 local autoFarm = GetModule("Robber")
+local serverHopper = GetModule("ServerHopper")
 
 
 tycoon:GetTycoon()
+
+local function Rejoin()
+    queue_on_teleport("task.wait(15)\n"..game:HttpGet("https://raw.githubusercontent.com/BFGKO/War-Tycoon-Auto-Rebirth/master/Main.lua"))
+    serverHopper:Hop(game.PlaceId)
+end
+
 
 local stopped
 eventManager:AddEvent("PlayerChattedWhileLoopStop", player.Chatted, function(message)
@@ -35,6 +43,7 @@ eventManager:AddEvent("PlayerChattedWhileLoopStop", player.Chatted, function(mes
         stopped = true
     end
 end)
+
 while not stopped do
     task.wait(0.25)
     pcall(function()
@@ -43,7 +52,6 @@ while not stopped do
             ReplicatedStorage.LocalRebirth:FireServer()
         end
 
-        print(cheapestItem:GetAttribute("DisplayName"))
     
         local cost : number = cheapestItem:GetAttribute("Price")
         local money : string = moneyUi.Text
@@ -52,6 +60,8 @@ while not stopped do
             local robbableTycoon = autoFarm:FindRobbableTycoon()
             if robbableTycoon then
                 autoFarm:RobTycoon(robbableTycoon)
+            else
+                Rejoin()
             end
             tycoon:CollectCash()
             task.wait(1.5)
@@ -65,3 +75,4 @@ while not stopped do
 end
 
 eventManager:StopAll()
+
