@@ -31,6 +31,7 @@ local serverHopper = GetModule("ServerHopper")
 tycoon:GetTycoon()
 
 local function Rejoin()
+    print("Server hopping")
     queue_on_teleport("task.wait(15)\n"..game:HttpGet("https://raw.githubusercontent.com/BFGKO/War-Tycoon-Auto-Rebirth/master/Main.lua"))
     serverHopper:Hop(game.PlaceId)
 end

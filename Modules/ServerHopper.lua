@@ -37,6 +37,7 @@ function hopper:Hop(placeId)
         if sameServer then
             continue
         end
+        print(server.id)
         local serverInfo = info[server.id]
         if serverInfo then
             local sHopTime = serverInfo.date
@@ -48,6 +49,7 @@ function hopper:Hop(placeId)
         self:SaveServer(server.id)
         Players.LocalPlayer:Kick("Server hopping")
         TeleportService:TeleportToPlaceInstance(placeId, server.id, Players.LocalPlayer)
+        break
     end
 end
 
