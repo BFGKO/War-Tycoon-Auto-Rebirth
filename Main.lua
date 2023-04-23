@@ -1,11 +1,10 @@
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local TeleportService = game:GetService("TeleportService")
+
 local function GetModule(moduleName : string)
     local url = "https://raw.githubusercontent.com/BFGKO/War-Tycoon-Auto-Rebirth/master/Modules/%s.lua"
     url = url:format(moduleName)
-    print(url)
-    local succes, response = pcall(function()
+    local succes, response : table = pcall(function()
         local content = game:HttpGet(url)
         return loadstring(content)()
     end)
@@ -13,6 +12,7 @@ local function GetModule(moduleName : string)
     if not succes then
         print(response, "when loading", moduleName)
     else
+        getgenv()[moduleName] = response
         return response
     end
 end
@@ -72,6 +72,8 @@ while not stopped do
             else
                 Rejoin()
             end
+            task.wait(1)
+            print("Collecting cash")
             tycoon:CollectCash()
             task.wait(1.5)
             return

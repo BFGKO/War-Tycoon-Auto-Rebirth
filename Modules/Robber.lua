@@ -80,6 +80,26 @@ function Robber:FindRobbableTycoon()
     rootPart.CFrame = startCFrame
 end
 
+function Robber:GetSafes(tycoon : Model)
+    local unlocks = tycoon:WaitForChild("Unlocks")
+    local safes = {}
+    for i, safe : Model in pairs(unlocks:GetDescendants()) do
+        if not (safe.Name:match("Safe") or safe.Name == "DiamondMiner") then
+            continue
+        end
+        local hasSafe = safe:FindFirstChild("Safe")
+        if hasSafe then
+            safe = hasSafe
+        end
+        local enabled = safe:FindFirstChild("Enabled")
+        if enabled and enabled.Color == Color3.fromRGB(25, 175, 30) then
+            table.insert(safes, safe)
+        end
+    end
+    print(("found %d safes"):format(#safes))
+    return safes
+end
+
 function Robber:RobTycoon(tycoon : Model)
     local character = player.Character
     local rootPart = character:WaitForChild("HumanoidRootPart")
@@ -94,6 +114,13 @@ function Robber:RobTycoon(tycoon : Model)
         ownerDoor.Parent = nil
     end
 
+    local safes = self:GetSafes(tycoon)
+
+    for i,v : Model in pairs(safes) do
+        print(v:GetFullName())
+    end
+
+
 
     rootPart.CFrame = raid.CFrame
     rootPart.Anchored = true
@@ -101,23 +128,12 @@ function Robber:RobTycoon(tycoon : Model)
     firetouchinterest(raid, rootPart, 0)
     task.wait(0.1)
     firetouchinterest(raid, rootPart, 1)
+
     print("Activated raid")
     rootPart.Anchored = false
 
     task.wait(1)
     
-    local unlocks = tycoon:WaitForChild("Unlocks")
-    local safes = {}
-    for i, safe : Model in pairs(unlocks:GetChildren()) do
-        local hasSafe = safe:FindFirstChild("Safe")
-        if hasSafe then
-            safe = hasSafe
-        end
-        local hasEnabled = safe:FindFirstChild("Enabled")
-        if hasEnabled then
-            table.insert(safes, safe)
-        end
-    end
 
     for i,safe in pairs(safes) do
         local enabled : Part = safe.Enabled
@@ -125,17 +141,18 @@ function Robber:RobTycoon(tycoon : Model)
         if not isEnabled then
             continue
         end
-        pcall(function()
-            local attachment : Attachment = enabled:FindFirstChild("HackAttachment")
-            local proximityPrompt = attachment:FindFirstChildOfClass("ProximityPrompt")
-    
-            rootPart.CFrame = enabled.CFrame - Vector3.yAxis * 20
-            rootPart.Anchored = true
-            fireproximityprompt(proximityPrompt, 1, true)
-        end)
 
-        task.wait(1.5)
+        local attachment : Attachment = enabled:FindFirstChild("HackAttachment")
+        local proximityPrompt = attachment:FindFirstChildOfClass("ProximityPrompt")
+
+        rootPart.CFrame = enabled.CFrame - Vector3.yAxis * 20
+        rootPart.Anchored = true
+        task.wait(0.25)
+        fireproximityprompt(proximityPrompt, 1, true)
+
+        task.wait(1.25)
     end
+
     rootPart.Anchored = false
     rootPart.CFrame = self.startCFrame
 
@@ -144,6 +161,6 @@ function Robber:RobTycoon(tycoon : Model)
     end
 end
 
--- Robber:RobTycoon( Robber:FindRobbableTycoon() )
+Robber:RobTycoon( Robber:FindRobbableTycoon() )
 
 return Robber

@@ -57,12 +57,13 @@ function Tycoon:BuyItem(item : Model)
 end
 
 function Tycoon:CollectCash()
+    getgenv()["Robber"]:LoadTycoon(self.tycoon)
     local character = player.Character
     local rootPart = character:WaitForChild("HumanoidRootPart")
 
     local essentials : Model = self.tycoon:WaitForChild("Essentials")
     local giver : Model = essentials:WaitForChild("Giver")
-    local collectButton = giver:WaitForChild("CollectButton")
+    local collectButton = giver.CollectButton
 
     local teleportPosition = collectButton.Position + Vector3.yAxis * 5
 
@@ -75,6 +76,9 @@ function Tycoon:CollectCash()
 end
 
 
+
+Tycoon:GetTycoon()
+Tycoon:CollectCash()
 
 
 return Tycoon
