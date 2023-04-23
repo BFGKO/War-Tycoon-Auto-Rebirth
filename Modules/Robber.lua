@@ -114,11 +114,8 @@ function Robber:RobTycoon(tycoon : Model)
         ownerDoor.Parent = nil
     end
 
-    local safes = self:GetSafes(tycoon)
+    
 
-    for i,v : Model in pairs(safes) do
-        print(v:GetFullName())
-    end
 
 
 
@@ -134,6 +131,7 @@ function Robber:RobTycoon(tycoon : Model)
 
     task.wait(1)
     
+    local safes = self:GetSafes(tycoon)
 
     for i,safe in pairs(safes) do
         local enabled : Part = safe.Enabled
