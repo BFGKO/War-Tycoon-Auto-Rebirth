@@ -146,10 +146,8 @@ function Robber:RobTycoon(tycoon : Model)
         if not attachment then
             continue
         end
-        local proximityPrompt = attachment:FindFirstChildOfClass("ProximityPrompt")
-        if not proximityPrompt then
-            continue
-        end
+        local proximityPrompt = attachment:WaitForChild("ProximityPrompt")
+
         rootPart.CFrame = enabled.CFrame - Vector3.yAxis * 20
         rootPart.Anchored = true
         task.wait(0.25)
