@@ -77,8 +77,5 @@ end
 
 
 
-Tycoon:GetTycoon()
-Tycoon:CollectCash()
-
 
 return Tycoon

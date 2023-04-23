@@ -161,6 +161,6 @@ function Robber:RobTycoon(tycoon : Model)
     end
 end
 
-Robber:RobTycoon( Robber:FindRobbableTycoon() )
+-- Robber:RobTycoon( Robber:FindRobbableTycoon() )
 
 return Robber
