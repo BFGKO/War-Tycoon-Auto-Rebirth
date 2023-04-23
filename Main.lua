@@ -26,6 +26,7 @@ local tycoon = GetModule("Tycoon")
 local eventManager = GetModule("EventManager")
 local autoFarm = GetModule("Robber")
 local serverHopper = GetModule("ServerHopper")
+local antiAfk = 
 
 
 tycoon:GetTycoon()
