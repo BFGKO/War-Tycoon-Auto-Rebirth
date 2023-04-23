@@ -108,13 +108,14 @@ function Robber:RobTycoon(tycoon : Model)
     
     local unlocks = tycoon:WaitForChild("Unlocks")
     local safes = {}
-    for i = 1,5 do
-        local name = "Safes"..i
-        local safesParent = unlocks:FindFirstChild(name)
-        if safesParent then
-            for i,safe in pairs(safesParent:GetChildren()) do
-                table.insert(safes, safe)
-            end
+    for i, safe : Model in pairs(unlocks:GetChildren()) do
+        local hasSafe = safe:FindFirstChild("Safe")
+        if hasSafe then
+            safe = hasSafe
+        end
+        local hasEnabled = safe:FindFirstChild("Enabled")
+        if hasEnabled then
+            table.insert(safes, safe)
         end
     end
 
