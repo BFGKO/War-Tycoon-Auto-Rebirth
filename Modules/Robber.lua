@@ -133,7 +133,7 @@ function Robber:RobTycoon(tycoon : Model)
             fireproximityprompt(proximityPrompt, 1, true)
         end)
 
-        task.wait(.5)
+        task.wait(1.5)
     end
     rootPart.Anchored = false
     rootPart.CFrame = self.startCFrame
