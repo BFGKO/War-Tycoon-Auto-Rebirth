@@ -137,10 +137,6 @@ function Robber:RobTycoon(tycoon : Model)
 
     for i,safe in pairs(safes) do
         local enabled : Part = safe.Enabled
-        local isEnabled = enabled.Color == Color3.fromRGB(25, 175, 30)
-        if not isEnabled then
-            continue
-        end
 
         local attachment : Attachment = enabled:FindFirstChild("HackAttachment")
         if not attachment then
