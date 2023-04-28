@@ -81,6 +81,9 @@ function Robber:FindRobbableTycoon()
         
         if not canRob then
             local robOffset = tonumber(cooldownGui.Text)
+            if not robOffset then
+                continue
+            end
             print(ownerName, "robbable in", robOffset)
 
             self.tycoons[tycoon] = {
@@ -101,18 +104,15 @@ end
 function Robber:GetSafes(tycoon : Model)
     local unlocks = tycoon:WaitForChild("Unlocks")
     local safes = {}
-    for i, safe : Model in pairs(unlocks:GetDescendants()) do
-        if not (safe.Name:match("Safe") or safe.Name == "DiamondMiner") then
+    for i, safe : Attachment in pairs(unlocks:GetDescendants()) do
+        if safe.Name ~= "HackAttachment" then
             continue
+        else
+            print(safe:GetFullName())
         end
-        local hasSafe = safe:FindFirstChild("Safe")
-        if hasSafe then
-            safe = hasSafe
-        end
-        local enabled = safe:FindFirstChild("Enabled")
-        if enabled and enabled.Color == Color3.fromRGB(25, 175, 30) then
-            table.insert(safes, safe)
-        end
+
+        -- local enabled = safe:FindFirstChild("Enabled")
+        table.insert(safes, safe)
     end
     print(("found %d safes"):format(#safes))
     return safes
@@ -147,29 +147,24 @@ function Robber:RobTycoon(tycoon : Model)
     
     local safes = self:GetSafes(tycoon)
 
-    for i,safe in pairs(safes) do
-        local enabled : Part = safe.Enabled
-
-        local attachment : Attachment = enabled:FindFirstChild("HackAttachment")
-        if not attachment then
+    for i,safe : Attachment in pairs(safes) do
+        local enabled = safe.Parent
+        task.wait(1.5)
+        rootPart.Anchored = false
+        task.wait(0.1)
+        rootPart.CFrame = enabled.CFrame
+        rootPart.Anchored = true
+        local proximityPrompt = safe:FindFirstChildOfClass("ProximityPrompt")
+        if not proximityPrompt then
             continue
         end
-        local startTime = tick()
+        -- for i,v in pairs(safe.Parent:GetDescendants()) do
+        --     print(i, v:GetFullName())
+        -- end
 
-        repeat
-            task.wait()
-
-        until startTime + 5 > tick() or attachment:FindFirstChild("ProximityPrompt")
-
-        local proximityPrompt = attachment:FindFirstChild("ProximityPrompt")
-        if not proximityPrompt then continue end
-
-        rootPart.CFrame = enabled.CFrame - Vector3.yAxis * 20
-        rootPart.Anchored = true
         task.wait(0.25)
-        fireproximityprompt(proximityPrompt, 1, true)
+        fireproximityprompt(proximityPrompt, 0, true)
 
-        task.wait(1.75)
     end
 
     rootPart.Anchored = false
@@ -210,9 +205,10 @@ end
 
 -- print("Executed")
     
--- local tycoon = Robber:FindRobbableTycoon()
+local tycoon = Robber:FindRobbableTycoon()
 
 -- Robber:RobTycoon(tycoon)
+
 
 -- print("Robbed all")
 

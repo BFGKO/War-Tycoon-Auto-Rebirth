@@ -77,7 +77,7 @@ end)
 
 while not stopped do
     task.wait(3)
-    coroutine.wrap(function()
+    pcall(function()
         local cheapestItem : Model = tycoon:GetCheapestItem()
         if not cheapestItem then
             ReplicatedStorage.LocalRebirth:FireServer()
@@ -103,9 +103,10 @@ while not stopped do
         else
             print("buying", cheapestItem:GetAttribute("DisplayName"), "for", cost)
             tycoon:BuyItem(cheapestItem)
+            task.wait()
         end
         
-    end)()
+    end)
 end
 
 eventManager:StopAll()
