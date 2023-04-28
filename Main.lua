@@ -1,7 +1,7 @@
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local developmentMode = true
+local developmentMode = false
 
 local function GetModule(moduleName : string)
     if not developmentMode then
@@ -76,8 +76,8 @@ eventManager:AddEvent("PlayerChattedWhileLoopStop", player.Chatted, function(mes
 end)
 
 while not stopped do
-    task.wait(0.25)
-    pcall(function()
+    task.wait(3)
+    coroutine.wrap(function()
         local cheapestItem : Model = tycoon:GetCheapestItem()
         if not cheapestItem then
             ReplicatedStorage.LocalRebirth:FireServer()
@@ -105,7 +105,7 @@ while not stopped do
             tycoon:BuyItem(cheapestItem)
         end
         
-    end)
+    end)()
 end
 
 eventManager:StopAll()
