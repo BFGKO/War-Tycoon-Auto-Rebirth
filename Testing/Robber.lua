@@ -15,7 +15,15 @@ local function GetModule(moduleName : string)
 end
 
 local robber = GetModule("Robber")
+print("Executed")
+while true do
+    
+    local tycoon = robber:FindRobbableTycoon()
+    if not tycoon then
+        break
+    end
+    
+    robber:RobTycoon(tycoon)
+end
 
-local tycoon = robber:FindRobbableTycoon()
-
-robber:RobTycoon(tycoon)
+print("Robbed all")

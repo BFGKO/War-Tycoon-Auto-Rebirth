@@ -132,10 +132,6 @@ function Robber:RobTycoon(tycoon : Model)
         ownerDoor.Parent = nil
     end
 
-    
-
-
-
 
     rootPart.CFrame = raid.CFrame
     rootPart.Anchored = true
@@ -158,14 +154,22 @@ function Robber:RobTycoon(tycoon : Model)
         if not attachment then
             continue
         end
-        local proximityPrompt = attachment:WaitForChild("ProximityPrompt")
+        local startTime = tick()
+
+        repeat
+            task.wait()
+
+        until startTime + 5 > tick() or attachment:FindFirstChild("ProximityPrompt")
+
+        local proximityPrompt = attachment:FindFirstChild("ProximityPrompt")
+        if not proximityPrompt then continue end
 
         rootPart.CFrame = enabled.CFrame - Vector3.yAxis * 20
         rootPart.Anchored = true
         task.wait(0.25)
         fireproximityprompt(proximityPrompt, 1, true)
 
-        task.wait(1.25)
+        task.wait(1.75)
     end
 
     rootPart.Anchored = false
@@ -178,8 +182,40 @@ function Robber:RobTycoon(tycoon : Model)
     self.tycoons[tycoon] = {
         robTime = tick()+1200
     }
+
+    Robber:CollectCash()
 end
 
--- Robber:RobTycoon( Robber:FindRobbableTycoon() )
+function Robber:CollectCash()
+    local selfTycoon 
+    for i,tycoon : Model in pairs(workspace.PlayerTycoons:GetChildren()) do
+        if tycoon:GetAttribute("Player") ~= player.UserId then
+            continue
+        end
+        selfTycoon = tycoon
+    end
+    self:LoadTycoon(selfTycoon)
+
+    local collector = selfTycoon:WaitForChild("Essentials"):WaitForChild("Giver"):WaitForChild("CollectButton")
+    local rootPart = player.Character.HumanoidRootPart
+    
+    rootPart.Anchored = false
+    rootPart.CFrame = CFrame.new(collector.Position + Vector3.yAxis*5)
+    firetouchinterest(collector, rootPart, 0)
+    task.wait(0.5)
+    firetouchinterest(collector, rootPart, 1)
+
+
+end
+
+-- print("Executed")
+    
+-- local tycoon = Robber:FindRobbableTycoon()
+
+-- Robber:RobTycoon(tycoon)
+
+-- print("Robbed all")
+
+-- Robber:CollectCash()
 
 return Robber
