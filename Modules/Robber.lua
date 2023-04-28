@@ -205,9 +205,9 @@ end
 
 -- print("Executed")
     
--- local tycoon = Robber:FindRobbableTycoon()
+local tycoon = Robber:FindRobbableTycoon()
 
--- Robber:RobTycoon(tycoon)
+Robber:RobTycoon(tycoon)
 
 
 -- print("Robbed all")

@@ -75,8 +75,7 @@ eventManager:AddEvent("PlayerChattedWhileLoopStop", player.Chatted, function(mes
     end
 end)
 
-while not stopped do
-    task.wait(3)
+while not stopped and task.wait() do
     pcall(function()
         local cheapestItem : Model = tycoon:GetCheapestItem()
         if not cheapestItem then
