@@ -1,19 +1,39 @@
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local function GetModule(moduleName : string)
-    local url = "https://raw.githubusercontent.com/BFGKO/War-Tycoon-Auto-Rebirth/master/Modules/%s.lua"
-    url = url:format(moduleName)
-    local succes, response : table = pcall(function()
-        local content = game:HttpGet(url)
-        return loadstring(content)()
-    end)
+local developmentMode = true
 
-    if not succes then
-        print(response, "when loading", moduleName)
+local function GetModule(moduleName : string)
+    if not developmentMode then
+        
+        local url = "https://raw.githubusercontent.com/BFGKO/War-Tycoon-Auto-Rebirth/master/Modules/%s.lua"
+        url = url:format(moduleName)
+        local succes, response : table = pcall(function()
+            local content = game:HttpGet(url)
+            return loadstring(content)()
+        end)
+    
+        if not succes then
+            print(response, "when loading", moduleName)
+        else
+            getgenv()[moduleName] = response
+            return response
+        end
+    
     else
-        getgenv()[moduleName] = response
-        return response
+        local url = "https://github.com/BFGKO/War-Tycoon-Auto-Rebirth/blob/master/Modules/%s.lua"
+        url = url:format(moduleName)
+        local succes, response : table = pcall(function()
+            local content = game:HttpGet(url)
+            return loadstring(content)()
+        end)
+    
+        if not succes then
+            print(response, "when loading", moduleName)
+        else
+            getgenv()[moduleName] = response
+            return response
+        end
     end
 end
 

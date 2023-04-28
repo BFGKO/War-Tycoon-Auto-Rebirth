@@ -4,7 +4,9 @@ local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 
 
-local Robber = {}
+local Robber = {
+    tycoons = {}
+}
 
 function Robber:LoadTycoon(tycoon : Model)
     local standPart = Instance.new("Part")
@@ -40,7 +42,17 @@ function Robber:FindRobbableTycoon()
     self.startCFrame = startCFrame
 
     local tycoons : Model = workspace.PlayerTycoons
+    for i,v : table in pairs(self.tycoons) do
+        if v.robTime <= tick() then -- robbable
+            return i
+        end
+    end
+
     for i,tycoon : Model in pairs(tycoons:GetChildren()) do
+        if self.tycoons[tycoon] then
+            continue
+        end
+
         local ownerId = tycoon:GetAttribute("Player")
         local ownerName = tycoon:GetAttribute("PlayerName")
         
@@ -68,7 +80,13 @@ function Robber:FindRobbableTycoon()
         
         
         if not canRob then
-            print(ownerName, "robbable in", cooldownGui.Text)
+            local robOffset = tonumber(cooldownGui.Text)
+            print(ownerName, "robbable in", robOffset)
+
+            self.tycoons[tycoon] = {
+                robTime = tick() + robOffset
+            }
+
             continue
         else
             print(ownerName, cooldownGui.Text)
@@ -156,6 +174,10 @@ function Robber:RobTycoon(tycoon : Model)
     for i,ownerDoor in pairs(ownerDoors) do
         ownerDoor.Parent = tycoon.Unlocks
     end
+
+    self.tycoons[tycoon] = {
+        robTime = tick()+1200
+    }
 end
 
 -- Robber:RobTycoon( Robber:FindRobbableTycoon() )
