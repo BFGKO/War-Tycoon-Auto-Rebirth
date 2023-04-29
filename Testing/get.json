@@ -1,0 +1,3008 @@
+{
+    "XmasLast": 0,
+    "EventRewards": {
+        "BankApr23_Prize5": true,
+        "BankApr23_Prize4": true,
+        "BankApr23_Prize3": true,
+        "BankApr23_Prize1": true,
+        "SoldierApr23_Prize1": true,
+        "BankApr23_Prize2": true,
+        "SoldierApr23_Prize2": true
+    },
+    "VehicleUpgrades": {
+        "GoldenF16": [],
+        "Invictus": [],
+        "Destroyer": {
+            "Speed2": false,
+            "Speed3": false,
+            "Health": false,
+            "Missile2": false,
+            "Speed": false,
+            "Health3": false,
+            "Health2": false,
+            "Missile1": false
+        },
+        "Airplane": {
+            "Speed2": false,
+            "Health2": false,
+            "Health": false,
+            "Health3": false,
+            "Speed": false,
+            "Speed3": false
+        },
+        "LaserTruck2": [],
+        "AbramTankAir": [],
+        "Jeep": {
+            "Speed2": false,
+            "Health2": false,
+            "Health": false,
+            "Health3": false,
+            "Speed": false,
+            "Speed3": false
+        },
+        "ArmoredVehicle": [],
+        "TurretHelicopter": {
+            "Speed2": false,
+            "Speed3": false,
+            "Health": false,
+            "Missile2": false,
+            "Speed": false,
+            "Health3": false,
+            "Health2": false,
+            "Missile1": false
+        },
+        "ArmoredAPC": [],
+        "Stormer": [],
+        "AttackSubmarine": {
+            "Speed2": false,
+            "Speed3": false,
+            "Health": false,
+            "Missile2": false,
+            "Speed": false,
+            "Health3": false,
+            "Health2": false,
+            "Missile1": false
+        },
+        "Battlecruiser": [],
+        "Leopard": [],
+        "GoldF35": [],
+        "DiveBomber": [],
+        "SuperSub": [],
+        "Chinook": {
+            "Speed2": false,
+            "Health2": false,
+            "Health": false,
+            "Health3": false,
+            "Speed": false,
+            "Speed3": false
+        },
+        "Himars": [],
+        "Terrorbyte": [],
+        "NorthCarolina": [],
+        "Merkava": [],
+        "NewSub": [],
+        "Super_Hovercraft": [],
+        "ZubrHovercraft": [],
+        "APC": {
+            "Speed2": false,
+            "Speed3": false,
+            "Turret": false,
+            "Health3": false,
+            "Gun2": false,
+            "Passengers": false,
+            "Health": false,
+            "Gun1": false,
+            "Speed": false,
+            "Health2": false
+        },
+        "AA-Tank": [],
+        "T90": [],
+        "ATV": {
+            "Speed2": false,
+            "Health2": false,
+            "Health": false,
+            "Health3": false,
+            "Speed": false,
+            "Speed3": false
+        },
+        "AAV": [],
+        "Blackhawk": [],
+        "F22": [],
+        "DuneBuggy": [],
+        "Boat": {
+            "Speed2": false,
+            "Health2": false,
+            "Health": false,
+            "Health3": false,
+            "Speed": false,
+            "Speed3": false
+        },
+        "Carrier": [],
+        "F18": [],
+        "ArmoredJeep": {
+            "Speed2": false,
+            "Health2": false,
+            "Health": false,
+            "Health3": false,
+            "Speed": false,
+            "Speed3": false
+        },
+        "Yamato": [],
+        "B29": [],
+        "Tank": {
+            "Speed2": false,
+            "Speed3": false,
+            "Health": false,
+            "Missile2": false,
+            "Speed": false,
+            "Health3": false,
+            "Health2": false,
+            "Missile1": false
+        },
+        "PL01": [],
+        "GunBoat": {
+            "Speed2": false,
+            "Speed3": false,
+            "Health": false,
+            "Health3": false,
+            "Speed": false,
+            "Gun2": false,
+            "Gun1": false,
+            "Health2": false
+        },
+        "AttackHelicopter": {
+            "Speed2": false,
+            "Speed3": false,
+            "Health": false,
+            "Missile2": false,
+            "Speed": false,
+            "Health3": false,
+            "Health2": false,
+            "Missile1": false
+        },
+        "SpitfireGold": [],
+        "EuroFighter": [],
+        "Katyusha": [],
+        "ArmoredSnowmobile": [],
+        "AbramTank": [],
+        "Darkstar": [],
+        "Truck": {
+            "Speed2": false,
+            "Health2": false,
+            "Health": false,
+            "Health3": false,
+            "Speed": false,
+            "Speed3": false
+        },
+        "Snowmobile": [],
+        "MausSanta": [],
+        "Edjer": [],
+        "HimarsGamepass": [],
+        "F35": [],
+        "SU47": [],
+        "F117": [],
+        "StealthF35": [],
+        "Halftrack": [],
+        "Helicopter": {
+            "Speed2": false,
+            "Health2": false,
+            "Health": false,
+            "Health3": false,
+            "Speed": false,
+            "Speed3": false
+        },
+        "Battleship": [],
+        "MI28": [],
+        "LaserTruck": [],
+        "Bomber": {
+            "Speed2": true,
+            "Speed3": true,
+            "Health": true,
+            "Missile2": true,
+            "Speed": true,
+            "Health3": true,
+            "Health2": true,
+            "Missile1": true
+        },
+        "F16": [],
+        "Hovercraft": {
+            "Speed2": false,
+            "Health2": false,
+            "Health": false,
+            "Health3": false,
+            "Speed": false,
+            "Speed3": false
+        },
+        "Artillery": {
+            "Speed2": false,
+            "Speed3": false,
+            "Health": false,
+            "Missile2": false,
+            "Speed": false,
+            "Health3": false,
+            "Health2": false,
+            "Missile1": false
+        },
+        "SandHyena": [],
+        "B-17": [],
+        "Warplane": {
+            "Speed2": false,
+            "Health2": false,
+            "Health3": false,
+            "Missile1": false,
+            "Health": false,
+            "Speed": false,
+            "Speed3": false,
+            "Missile2": false,
+            "Ultimate": false
+        },
+        "Maus": [],
+        "Warship1": [],
+        "24kTank": [],
+        "Halftrack2": [],
+        "Submarine": {
+            "Speed2": false,
+            "Health2": false,
+            "Health": false,
+            "Health3": false,
+            "Speed": false,
+            "Speed3": false
+        },
+        "MissileTruck": [],
+        "SuperEuroFighter": [],
+        "Whale": [],
+        "EasterTank": [],
+        "Airplane2": {
+            "Speed2": false,
+            "Health2": false,
+            "Health": false,
+            "Health3": false,
+            "Speed": false,
+            "Speed3": false
+        },
+        "SuperAPC": [],
+        "Apache": {
+            "Speed2": false,
+            "Speed3": false,
+            "Health": false,
+            "Missile2": false,
+            "Speed": false,
+            "Health3": false,
+            "Health2": false,
+            "Missile1": false
+        },
+        "F14": [],
+        "Warship": {
+            "Speed2": false,
+            "Speed3": false,
+            "Health": false,
+            "Missile2": false,
+            "Speed": false,
+            "Health3": false,
+            "Health2": false,
+            "Missile1": false
+        },
+        "SuperEdjer": [],
+        "TurretTruck": [],
+        "FighterJet": {
+            "Speed2": false,
+            "Speed3": false,
+            "Health": false,
+            "Missile2": false,
+            "Speed": false,
+            "Health3": false,
+            "Health2": false,
+            "Missile1": false
+        },
+        "JetSki": {
+            "Speed2": false,
+            "Health2": false,
+            "Health": false,
+            "Health3": false,
+            "Speed": false,
+            "Speed3": false
+        },
+        "JSAtago": [],
+        "GoldenF22": [],
+        "TigerTank": [],
+        "GrappleATV": [],
+        "TurretChinook": {
+            "Speed2": false,
+            "Health2": false,
+            "Health": false,
+            "Health3": false,
+            "Speed": false,
+            "Speed3": false
+        },
+        "SachsenFrigate": [],
+        "AbramTank2": [],
+        "Humvee": {
+            "Speed2": false,
+            "Speed3": false,
+            "Turret": false,
+            "Health3": false,
+            "Gun2": false,
+            "Health": false,
+            "Gun1": false,
+            "Speed": false,
+            "Health2": false
+        },
+        "WeinerWagon": [],
+        "Spitfire": {
+            "Speed2": false,
+            "Speed3": false,
+            "Health": false,
+            "Health3": false,
+            "Speed": false,
+            "Gun2": false,
+            "Gun1": false,
+            "Health2": false
+        },
+        "ExplosiveSuperEdjer": []
+    },
+    "IsFirstTime": false,
+    "JoinTime": 1682768427.8488522,
+    "Last2am": 138,
+    "TycoonLoaded": true,
+    "BaseHealth": 100,
+    "AbramParts": [],
+    "Seasons": {
+        "Warship_Level": 1,
+        "Warship_Reward1": true,
+        "Warship_Points": 50,
+        "Warship_TotalPoints": 200
+    },
+    "OldDataPorted": true,
+    "Gems": 90,
+    "Booster1": false,
+    "GiftId": false,
+    "QuestProgress3": 0,
+    "Booster2": false,
+    "Soldier1": "1ad077e5-89e3-46dc-9239-6c11375f77c1",
+    "Quests": {
+        "F16": {
+            "Destroyed": 1
+        },
+        "Maverick": {
+            "Points": 80
+        }
+    },
+    "PlayedBefore": true,
+    "Vehicles": [],
+    "QuestProgress2": 25,
+    "TutorialStage": 0,
+    "EventTemp": [],
+    "Totals": {
+        "StructuresDestroyed": 0,
+        "Destruction": 5,
+        "TreesDestroyed": 0
+    },
+    "XP": 4048,
+    "ExtraTycoon": {
+        "AAV1": true,
+        "Path": true,
+        "Button3": true,
+        "Button5": true,
+        "Button6": true,
+        "SuperSafe1": true,
+        "AAV3": true,
+        "Button2": true,
+        "Button1": true,
+        "SecondLasers1": true,
+        "FirstLasers3": true,
+        "StealthArmor": true,
+        "MeetingRoom": true,
+        "SuperSafe2": true,
+        "MissileTruck1": true,
+        "SecondLasers2": true,
+        "HeatKnife": true,
+        "DiveBomber1": true,
+        "Safes2": true,
+        "FirstLasers1": true,
+        "Button4": true,
+        "Safes4": true,
+        "SydArmor": true,
+        "DiamondMiner": true,
+        "VaultGarage": true,
+        "Safes3": true,
+        "Safes1": true,
+        "SecondLasers3": true,
+        "AAV2": true,
+        "FirstLasers2": true,
+        "InsaneSafe": true,
+        "RiotShield": true,
+        "VaultRoom1": true
+    },
+    "AntiTeleport": false,
+    "UncollectedCash": 512919,
+    "QuestProgress1": 12,
+    "Flags": [],
+    "TaskProgress": 0,
+    "Gamepasses": [],
+    "GemLevel": 3,
+    "WeaponData": {
+        "Weapon21": {
+            "UB3": [
+                false,
+                false
+            ],
+            "UB1": [
+                false,
+                false
+            ],
+            "S3": [
+                false,
+                false
+            ],
+            "B3": [
+                false,
+                false
+            ],
+            "B1": [
+                false,
+                false
+            ],
+            "S1": [
+                false,
+                false
+            ],
+            "UB2": [
+                false,
+                false
+            ],
+            "B2": [
+                false,
+                false
+            ],
+            "S2": [
+                false,
+                false
+            ]
+        },
+        "Weapon16": {
+            "UB3": [
+                false,
+                false
+            ],
+            "UB1": [
+                false,
+                false
+            ],
+            "S3": [
+                false,
+                false
+            ],
+            "B3": [
+                false,
+                false
+            ],
+            "B1": [
+                false,
+                false
+            ],
+            "S1": [
+                false,
+                false
+            ],
+            "UB2": [
+                false,
+                false
+            ],
+            "B2": [
+                false,
+                false
+            ],
+            "S2": [
+                false,
+                false
+            ]
+        },
+        "Weapon11": {
+            "UB3": [
+                false,
+                false
+            ],
+            "UB1": [
+                false,
+                false
+            ],
+            "S3": [
+                false,
+                false
+            ],
+            "B3": [
+                false,
+                false
+            ],
+            "B1": [
+                false,
+                false
+            ],
+            "S1": [
+                false,
+                false
+            ],
+            "UB2": [
+                false,
+                false
+            ],
+            "B2": [
+                false,
+                false
+            ],
+            "S2": [
+                false,
+                false
+            ]
+        },
+        "Weapon14": {
+            "UB3": [
+                false,
+                false
+            ],
+            "UB1": [
+                false,
+                false
+            ],
+            "S3": [
+                false,
+                false
+            ],
+            "B3": [
+                false,
+                false
+            ],
+            "B1": [
+                false,
+                false
+            ],
+            "S1": [
+                false,
+                false
+            ],
+            "UB2": [
+                false,
+                false
+            ],
+            "B2": [
+                false,
+                false
+            ],
+            "S2": [
+                false,
+                false
+            ]
+        },
+        "Weapon17": {
+            "UB3": [
+                false,
+                false
+            ],
+            "UB1": [
+                false,
+                false
+            ],
+            "S3": [
+                false,
+                false
+            ],
+            "B3": [
+                false,
+                false
+            ],
+            "B1": [
+                false,
+                false
+            ],
+            "S1": [
+                false,
+                false
+            ],
+            "UB2": [
+                false,
+                false
+            ],
+            "B2": [
+                false,
+                false
+            ],
+            "S2": [
+                false,
+                false
+            ]
+        },
+        "Weapon8": {
+            "UB3": [
+                false,
+                false
+            ],
+            "UB1": [
+                false,
+                false
+            ],
+            "S3": [
+                false,
+                false
+            ],
+            "B3": [
+                false,
+                false
+            ],
+            "B1": [
+                false,
+                false
+            ],
+            "S1": [
+                false,
+                false
+            ],
+            "UB2": [
+                false,
+                false
+            ],
+            "B2": [
+                false,
+                false
+            ],
+            "S2": [
+                false,
+                false
+            ]
+        },
+        "Weapon6": {
+            "UB3": [
+                false,
+                false
+            ],
+            "UB1": [
+                false,
+                false
+            ],
+            "S3": [
+                false,
+                false
+            ],
+            "B3": [
+                false,
+                false
+            ],
+            "B1": [
+                false,
+                false
+            ],
+            "S1": [
+                false,
+                false
+            ],
+            "UB2": [
+                false,
+                false
+            ],
+            "B2": [
+                false,
+                false
+            ],
+            "S2": [
+                false,
+                false
+            ]
+        },
+        "Weapon1": {
+            "UB3": [
+                false,
+                false
+            ],
+            "UB1": [
+                false,
+                false
+            ],
+            "S3": [
+                false,
+                false
+            ],
+            "B3": [
+                false,
+                false
+            ],
+            "B1": [
+                false,
+                false
+            ],
+            "S1": [
+                false,
+                false
+            ],
+            "UB2": [
+                false,
+                false
+            ],
+            "B2": [
+                false,
+                false
+            ],
+            "S2": [
+                false,
+                false
+            ]
+        },
+        "Weapon12": {
+            "UB3": [
+                false,
+                false
+            ],
+            "UB1": [
+                false,
+                false
+            ],
+            "S3": [
+                false,
+                false
+            ],
+            "B3": [
+                false,
+                false
+            ],
+            "B1": [
+                false,
+                false
+            ],
+            "S1": [
+                false,
+                false
+            ],
+            "UB2": [
+                false,
+                false
+            ],
+            "B2": [
+                false,
+                false
+            ],
+            "S2": [
+                false,
+                false
+            ]
+        },
+        "Weapon3": {
+            "UB3": [
+                false,
+                false
+            ],
+            "UB1": [
+                false,
+                false
+            ],
+            "S3": [
+                false,
+                false
+            ],
+            "B3": [
+                false,
+                false
+            ],
+            "B1": [
+                false,
+                false
+            ],
+            "S1": [
+                false,
+                false
+            ],
+            "UB2": [
+                false,
+                false
+            ],
+            "B2": [
+                false,
+                false
+            ],
+            "S2": [
+                false,
+                false
+            ]
+        },
+        "Weapon7": {
+            "UB3": [
+                false,
+                false
+            ],
+            "UB1": [
+                false,
+                false
+            ],
+            "S3": [
+                false,
+                false
+            ],
+            "B3": [
+                false,
+                false
+            ],
+            "B1": [
+                false,
+                false
+            ],
+            "S1": [
+                false,
+                false
+            ],
+            "UB2": [
+                false,
+                false
+            ],
+            "B2": [
+                false,
+                false
+            ],
+            "S2": [
+                false,
+                false
+            ]
+        },
+        "Weapon19": {
+            "UB3": [
+                false,
+                false
+            ],
+            "UB1": [
+                false,
+                false
+            ],
+            "S3": [
+                false,
+                false
+            ],
+            "B3": [
+                false,
+                false
+            ],
+            "B1": [
+                false,
+                false
+            ],
+            "S1": [
+                false,
+                false
+            ],
+            "UB2": [
+                false,
+                false
+            ],
+            "B2": [
+                false,
+                false
+            ],
+            "S2": [
+                false,
+                false
+            ]
+        },
+        "Weapon20": {
+            "UB3": [
+                true,
+                true
+            ],
+            "UB1": [
+                false,
+                false
+            ],
+            "S3": [
+                false,
+                false
+            ],
+            "B3": [
+                false,
+                false
+            ],
+            "B1": [
+                true,
+                true
+            ],
+            "S1": [
+                false,
+                false
+            ],
+            "UB2": [
+                false,
+                false
+            ],
+            "B2": [
+                false,
+                false
+            ],
+            "S2": [
+                true,
+                true
+            ]
+        },
+        "Weapon10": {
+            "UB3": [
+                false,
+                false
+            ],
+            "UB1": [
+                false,
+                false
+            ],
+            "S3": [
+                false,
+                false
+            ],
+            "B3": [
+                false,
+                false
+            ],
+            "B1": [
+                false,
+                false
+            ],
+            "S1": [
+                false,
+                false
+            ],
+            "UB2": [
+                false,
+                false
+            ],
+            "B2": [
+                false,
+                false
+            ],
+            "S2": [
+                false,
+                false
+            ]
+        },
+        "Weapon4": {
+            "UB3": [
+                false,
+                false
+            ],
+            "UB1": [
+                false,
+                false
+            ],
+            "S3": [
+                false,
+                false
+            ],
+            "B3": [
+                false,
+                false
+            ],
+            "B1": [
+                false,
+                false
+            ],
+            "S1": [
+                false,
+                false
+            ],
+            "UB2": [
+                false,
+                false
+            ],
+            "B2": [
+                false,
+                false
+            ],
+            "S2": [
+                false,
+                false
+            ]
+        },
+        "Weapon15": {
+            "UB3": [
+                false,
+                false
+            ],
+            "UB1": [
+                false,
+                false
+            ],
+            "S3": [
+                false,
+                false
+            ],
+            "B3": [
+                false,
+                false
+            ],
+            "B1": [
+                false,
+                false
+            ],
+            "S1": [
+                false,
+                false
+            ],
+            "UB2": [
+                false,
+                false
+            ],
+            "B2": [
+                false,
+                false
+            ],
+            "S2": [
+                false,
+                false
+            ]
+        },
+        "Weapon18": {
+            "UB3": [
+                true,
+                true
+            ],
+            "UB1": [
+                false,
+                false
+            ],
+            "S3": [
+                false,
+                false
+            ],
+            "B3": [
+                false,
+                false
+            ],
+            "B1": [
+                false,
+                false
+            ],
+            "S1": [
+                false,
+                false
+            ],
+            "UB2": [
+                false,
+                false
+            ],
+            "B2": [
+                false,
+                false
+            ],
+            "S2": [
+                true,
+                true
+            ]
+        },
+        "Weapon2": {
+            "UB3": [
+                false,
+                false
+            ],
+            "UB1": [
+                false,
+                false
+            ],
+            "S3": [
+                false,
+                false
+            ],
+            "B3": [
+                false,
+                false
+            ],
+            "B1": [
+                false,
+                false
+            ],
+            "S1": [
+                false,
+                false
+            ],
+            "UB2": [
+                false,
+                false
+            ],
+            "B2": [
+                false,
+                false
+            ],
+            "S2": [
+                false,
+                false
+            ]
+        },
+        "Weapon13": {
+            "UB3": [
+                false,
+                false
+            ],
+            "UB1": [
+                false,
+                false
+            ],
+            "S3": [
+                false,
+                false
+            ],
+            "B3": [
+                false,
+                false
+            ],
+            "B1": [
+                false,
+                false
+            ],
+            "S1": [
+                false,
+                false
+            ],
+            "UB2": [
+                false,
+                false
+            ],
+            "B2": [
+                false,
+                false
+            ],
+            "S2": [
+                false,
+                false
+            ]
+        },
+        "Weapon5": {
+            "UB3": [
+                false,
+                false
+            ],
+            "UB1": [
+                false,
+                false
+            ],
+            "S3": [
+                false,
+                false
+            ],
+            "B3": [
+                false,
+                false
+            ],
+            "B1": [
+                false,
+                false
+            ],
+            "S1": [
+                false,
+                false
+            ],
+            "UB2": [
+                false,
+                false
+            ],
+            "B2": [
+                false,
+                false
+            ],
+            "S2": [
+                false,
+                false
+            ]
+        },
+        "Weapon9": {
+            "UB3": [
+                false,
+                false
+            ],
+            "UB1": [
+                false,
+                false
+            ],
+            "S3": [
+                false,
+                false
+            ],
+            "B3": [
+                false,
+                false
+            ],
+            "B1": [
+                false,
+                false
+            ],
+            "S1": [
+                false,
+                false
+            ],
+            "UB2": [
+                false,
+                false
+            ],
+            "B2": [
+                false,
+                false
+            ],
+            "S2": [
+                false,
+                false
+            ]
+        }
+    },
+    "TutorialFinished": true,
+    "PortedTycoon": true,
+    "TycoonData": [],
+    "DataLoaded": true,
+    "OldData": {
+        "VehicleUpgrades": {
+            "Tank": {
+                "Speed2": false,
+                "Speed3": false,
+                "Health": false,
+                "Missile2": false,
+                "Speed": false,
+                "Health3": false,
+                "Health2": false,
+                "Missile1": false
+            },
+            "Warplane": {
+                "Speed2": false,
+                "Health2": false,
+                "Health3": false,
+                "Missile1": false,
+                "Health": false,
+                "Speed": false,
+                "Speed3": false,
+                "Missile2": false,
+                "Ultimate": false
+            },
+            "GunBoat": {
+                "Speed2": false,
+                "Speed3": false,
+                "Health": false,
+                "Health3": false,
+                "Speed": false,
+                "Gun2": false,
+                "Gun1": false,
+                "Health2": false
+            },
+            "Destroyer": {
+                "Speed2": false,
+                "Speed3": false,
+                "Health": false,
+                "Missile2": false,
+                "Speed": false,
+                "Health3": false,
+                "Health2": false,
+                "Missile1": false
+            },
+            "Airplane": {
+                "Speed2": false,
+                "Health2": false,
+                "Health": false,
+                "Health3": false,
+                "Speed": false,
+                "Speed3": false
+            },
+            "AttackHelicopter": {
+                "Speed2": false,
+                "Speed3": false,
+                "Health": false,
+                "Missile2": false,
+                "Speed": false,
+                "Health3": false,
+                "Health2": false,
+                "Missile1": false
+            },
+            "Truck": {
+                "Speed2": false,
+                "Health2": false,
+                "Health": false,
+                "Health3": false,
+                "Speed": false,
+                "Speed3": false
+            },
+            "Spitfire": {
+                "Speed2": false,
+                "Speed3": false,
+                "Health": false,
+                "Health3": false,
+                "Speed": false,
+                "Gun2": false,
+                "Gun1": false,
+                "Health2": false
+            },
+            "Warship": {
+                "Speed2": false,
+                "Speed3": false,
+                "Health": false,
+                "Missile2": false,
+                "Speed": false,
+                "Health3": false,
+                "Health2": false,
+                "Missile1": false
+            },
+            "Airplane2": {
+                "Speed2": false,
+                "Health2": false,
+                "Health": false,
+                "Health3": false,
+                "Speed": false,
+                "Speed3": false
+            },
+            "Jeep": {
+                "Speed2": false,
+                "Health2": false,
+                "Health": false,
+                "Health3": false,
+                "Speed": false,
+                "Speed3": false
+            },
+            "APC": {
+                "Speed2": false,
+                "Speed3": false,
+                "Turret": false,
+                "Health3": false,
+                "Gun2": false,
+                "Passengers": false,
+                "Health": false,
+                "Gun1": false,
+                "Speed": false,
+                "Health2": false
+            },
+            "TurretHelicopter": {
+                "Speed2": false,
+                "Speed3": false,
+                "Health": false,
+                "Missile2": false,
+                "Speed": false,
+                "Health3": false,
+                "Health2": false,
+                "Missile1": false
+            },
+            "Chinook": {
+                "Speed2": false,
+                "Health2": false,
+                "Health": false,
+                "Health3": false,
+                "Speed": false,
+                "Speed3": false
+            },
+            "ATV": {
+                "Speed2": false,
+                "Health2": false,
+                "Health": false,
+                "Health3": false,
+                "Speed": false,
+                "Speed3": false
+            },
+            "FighterJet": {
+                "Speed2": false,
+                "Speed3": false,
+                "Health": false,
+                "Missile2": false,
+                "Speed": false,
+                "Health3": false,
+                "Health2": false,
+                "Missile1": false
+            },
+            "Artillery": {
+                "Speed2": false,
+                "Speed3": false,
+                "Health": false,
+                "Missile2": false,
+                "Speed": false,
+                "Health3": false,
+                "Health2": false,
+                "Missile1": false
+            },
+            "Humvee": {
+                "Speed2": false,
+                "Speed3": false,
+                "Turret": false,
+                "Health3": false,
+                "Gun2": false,
+                "Health": false,
+                "Gun1": false,
+                "Speed": false,
+                "Health2": false
+            },
+            "Bomber": {
+                "Speed2": false,
+                "Speed3": false,
+                "Health": false,
+                "Missile2": false,
+                "Speed": false,
+                "Health3": false,
+                "Health2": false,
+                "Missile1": false
+            },
+            "AttackSubmarine": {
+                "Speed2": false,
+                "Speed3": false,
+                "Health": false,
+                "Missile2": false,
+                "Speed": false,
+                "Health3": false,
+                "Health2": false,
+                "Missile1": false
+            },
+            "Helicopter": {
+                "Speed2": false,
+                "Health2": false,
+                "Health": false,
+                "Health3": false,
+                "Speed": false,
+                "Speed3": false
+            },
+            "TurretChinook": {
+                "Speed2": false,
+                "Health2": false,
+                "Health": false,
+                "Health3": false,
+                "Speed": false,
+                "Speed3": false
+            },
+            "Submarine": {
+                "Speed2": false,
+                "Health2": false,
+                "Health": false,
+                "Health3": false,
+                "Speed": false,
+                "Speed3": false
+            },
+            "Boat": {
+                "Speed2": false,
+                "Health2": false,
+                "Health": false,
+                "Health3": false,
+                "Speed": false,
+                "Speed3": false
+            },
+            "Apache": {
+                "Speed2": false,
+                "Speed3": false,
+                "Health": false,
+                "Missile2": false,
+                "Speed": false,
+                "Health3": false,
+                "Health2": false,
+                "Missile1": false
+            },
+            "JetSki": {
+                "Speed2": false,
+                "Health2": false,
+                "Health": false,
+                "Health3": false,
+                "Speed": false,
+                "Speed3": false
+            },
+            "Hovercraft": {
+                "Speed2": false,
+                "Health2": false,
+                "Health": false,
+                "Health3": false,
+                "Speed": false,
+                "Speed3": false
+            },
+            "ArmoredJeep": {
+                "Speed2": false,
+                "Health2": false,
+                "Health": false,
+                "Health3": false,
+                "Speed": false,
+                "Speed3": false
+            }
+        },
+        "JoinTime": 1655795082.218791,
+        "DataLoaded2": true,
+        "TycoonLoaded": true,
+        "DataLoaded": true,
+        "SavedTycoons": "[]",
+        "BaseHealth": 100,
+        "Unlocks": [],
+        "PlayerState": "Normal",
+        "Gems": 13,
+        "Rebirth": 0,
+        "Booster1": false,
+        "GiftId": false,
+        "RaidHalo": 1655801941,
+        "CurrentArmor": "Armor5",
+        "Booster2": false,
+        "Rank": 2,
+        "Tycoon": [],
+        "Requests": true,
+        "Kills": 21,
+        "Tokens": 0,
+        "Eggs": 0,
+        "Booster3": false,
+        "XP": 1916,
+        "Credits": 900,
+        "AntiTeleport": false,
+        "UncollectedCash": 11830,
+        "FirstTime": false,
+        "Region": "LT",
+        "DailyRewards": {
+            "Streak": 2,
+            "RewardTime": 1655725526
+        },
+        "WarKills": 0,
+        "Loadout": {
+            "Gears": [
+                "M16",
+                "Grenade",
+                "M249",
+                "Barrett"
+            ]
+        },
+        "Bounty": 0,
+        "DataStep": 0,
+        "TycoonData": [],
+        "SkinData": {
+            "Weapon21": {
+                "WS": [
+                    "Emerald"
+                ],
+                "Skin": false
+            },
+            "Weapon16": {
+                "WS": [],
+                "Skin": false
+            },
+            "Weapon11": {
+                "WS": [
+                    "Sapphire"
+                ],
+                "Skin": 1
+            },
+            "Weapon14": {
+                "WS": [],
+                "Skin": false
+            },
+            "Weapon17": {
+                "WS": [],
+                "Skin": false
+            },
+            "Weapon8": {
+                "WS": [],
+                "Skin": false
+            },
+            "Weapon6": {
+                "WS": [],
+                "Skin": false
+            },
+            "Weapon1": {
+                "WS": [],
+                "Skin": false
+            },
+            "Weapon12": {
+                "WS": [],
+                "Skin": false
+            },
+            "Weapon3": {
+                "WS": [],
+                "Skin": false
+            },
+            "Weapon7": {
+                "WS": [],
+                "Skin": false
+            },
+            "Weapon19": {
+                "WS": [],
+                "Skin": false
+            },
+            "Weapon20": {
+                "WS": [],
+                "Skin": false
+            },
+            "Weapon10": {
+                "WS": [],
+                "Skin": false
+            },
+            "Weapon4": {
+                "WS": [],
+                "Skin": false
+            },
+            "Weapon15": {
+                "WS": [],
+                "Skin": false
+            },
+            "Weapon18": {
+                "WS": [],
+                "Skin": false
+            },
+            "Weapon2": {
+                "WS": [],
+                "Skin": false
+            },
+            "Weapon13": {
+                "WS": [],
+                "Skin": false
+            },
+            "Weapon5": {
+                "WS": [],
+                "Skin": false
+            },
+            "Weapon9": {
+                "WS": [],
+                "Skin": false
+            }
+        },
+        "Queued": false,
+        "Gamepasses": [],
+        "GemLevel": 0,
+        "WeaponData": {
+            "Weapon21": {
+                "UB3": [
+                    false,
+                    false
+                ],
+                "UB1": [
+                    false,
+                    false
+                ],
+                "S3": [
+                    false,
+                    false
+                ],
+                "B3": [
+                    false,
+                    false
+                ],
+                "B1": [
+                    false,
+                    false
+                ],
+                "S1": [
+                    false,
+                    false
+                ],
+                "UB2": [
+                    false,
+                    false
+                ],
+                "B2": [
+                    false,
+                    false
+                ],
+                "S2": [
+                    false,
+                    false
+                ]
+            },
+            "Weapon16": {
+                "UB3": [
+                    false,
+                    false
+                ],
+                "UB1": [
+                    false,
+                    false
+                ],
+                "S3": [
+                    false,
+                    false
+                ],
+                "B3": [
+                    false,
+                    false
+                ],
+                "B1": [
+                    false,
+                    false
+                ],
+                "S1": [
+                    false,
+                    false
+                ],
+                "UB2": [
+                    false,
+                    false
+                ],
+                "B2": [
+                    false,
+                    false
+                ],
+                "S2": [
+                    false,
+                    false
+                ]
+            },
+            "Weapon11": {
+                "UB3": [
+                    false,
+                    false
+                ],
+                "UB1": [
+                    false,
+                    false
+                ],
+                "S3": [
+                    false,
+                    false
+                ],
+                "B3": [
+                    false,
+                    false
+                ],
+                "B1": [
+                    false,
+                    false
+                ],
+                "S1": [
+                    false,
+                    false
+                ],
+                "UB2": [
+                    false,
+                    false
+                ],
+                "B2": [
+                    false,
+                    false
+                ],
+                "S2": [
+                    false,
+                    false
+                ]
+            },
+            "Weapon14": {
+                "UB3": [
+                    false,
+                    false
+                ],
+                "UB1": [
+                    false,
+                    false
+                ],
+                "S3": [
+                    false,
+                    false
+                ],
+                "B3": [
+                    false,
+                    false
+                ],
+                "B1": [
+                    false,
+                    false
+                ],
+                "S1": [
+                    false,
+                    false
+                ],
+                "UB2": [
+                    false,
+                    false
+                ],
+                "B2": [
+                    false,
+                    false
+                ],
+                "S2": [
+                    false,
+                    false
+                ]
+            },
+            "Weapon17": {
+                "UB3": [
+                    false,
+                    false
+                ],
+                "UB1": [
+                    false,
+                    false
+                ],
+                "S3": [
+                    false,
+                    false
+                ],
+                "B3": [
+                    false,
+                    false
+                ],
+                "B1": [
+                    false,
+                    false
+                ],
+                "S1": [
+                    false,
+                    false
+                ],
+                "UB2": [
+                    false,
+                    false
+                ],
+                "B2": [
+                    false,
+                    false
+                ],
+                "S2": [
+                    false,
+                    false
+                ]
+            },
+            "Weapon8": {
+                "UB3": [
+                    false,
+                    false
+                ],
+                "UB1": [
+                    false,
+                    false
+                ],
+                "S3": [
+                    false,
+                    false
+                ],
+                "B3": [
+                    false,
+                    false
+                ],
+                "B1": [
+                    false,
+                    false
+                ],
+                "S1": [
+                    false,
+                    false
+                ],
+                "UB2": [
+                    false,
+                    false
+                ],
+                "B2": [
+                    false,
+                    false
+                ],
+                "S2": [
+                    false,
+                    false
+                ]
+            },
+            "Weapon6": {
+                "UB3": [
+                    false,
+                    false
+                ],
+                "UB1": [
+                    false,
+                    false
+                ],
+                "S3": [
+                    false,
+                    false
+                ],
+                "B3": [
+                    false,
+                    false
+                ],
+                "B1": [
+                    false,
+                    false
+                ],
+                "S1": [
+                    false,
+                    false
+                ],
+                "UB2": [
+                    false,
+                    false
+                ],
+                "B2": [
+                    false,
+                    false
+                ],
+                "S2": [
+                    false,
+                    false
+                ]
+            },
+            "Weapon1": {
+                "UB3": [
+                    false,
+                    false
+                ],
+                "UB1": [
+                    false,
+                    false
+                ],
+                "S3": [
+                    false,
+                    false
+                ],
+                "B3": [
+                    false,
+                    false
+                ],
+                "B1": [
+                    false,
+                    false
+                ],
+                "S1": [
+                    false,
+                    false
+                ],
+                "UB2": [
+                    false,
+                    false
+                ],
+                "B2": [
+                    false,
+                    false
+                ],
+                "S2": [
+                    false,
+                    false
+                ]
+            },
+            "Weapon12": {
+                "UB3": [
+                    false,
+                    false
+                ],
+                "UB1": [
+                    false,
+                    false
+                ],
+                "S3": [
+                    false,
+                    false
+                ],
+                "B3": [
+                    false,
+                    false
+                ],
+                "B1": [
+                    false,
+                    false
+                ],
+                "S1": [
+                    false,
+                    false
+                ],
+                "UB2": [
+                    false,
+                    false
+                ],
+                "B2": [
+                    false,
+                    false
+                ],
+                "S2": [
+                    false,
+                    false
+                ]
+            },
+            "Weapon3": {
+                "UB3": [
+                    false,
+                    false
+                ],
+                "UB1": [
+                    false,
+                    false
+                ],
+                "S3": [
+                    false,
+                    false
+                ],
+                "B3": [
+                    false,
+                    false
+                ],
+                "B1": [
+                    false,
+                    false
+                ],
+                "S1": [
+                    false,
+                    false
+                ],
+                "UB2": [
+                    false,
+                    false
+                ],
+                "B2": [
+                    false,
+                    false
+                ],
+                "S2": [
+                    false,
+                    false
+                ]
+            },
+            "Weapon7": {
+                "UB3": [
+                    false,
+                    false
+                ],
+                "UB1": [
+                    false,
+                    false
+                ],
+                "S3": [
+                    false,
+                    false
+                ],
+                "B3": [
+                    false,
+                    false
+                ],
+                "B1": [
+                    false,
+                    false
+                ],
+                "S1": [
+                    false,
+                    false
+                ],
+                "UB2": [
+                    false,
+                    false
+                ],
+                "B2": [
+                    false,
+                    false
+                ],
+                "S2": [
+                    false,
+                    false
+                ]
+            },
+            "Weapon19": {
+                "UB3": [
+                    false,
+                    false
+                ],
+                "UB1": [
+                    false,
+                    false
+                ],
+                "S3": [
+                    false,
+                    false
+                ],
+                "B3": [
+                    false,
+                    false
+                ],
+                "B1": [
+                    false,
+                    false
+                ],
+                "S1": [
+                    false,
+                    false
+                ],
+                "UB2": [
+                    false,
+                    false
+                ],
+                "B2": [
+                    false,
+                    false
+                ],
+                "S2": [
+                    false,
+                    false
+                ]
+            },
+            "Weapon20": {
+                "UB3": [
+                    false,
+                    false
+                ],
+                "UB1": [
+                    false,
+                    false
+                ],
+                "S3": [
+                    false,
+                    false
+                ],
+                "B3": [
+                    false,
+                    false
+                ],
+                "B1": [
+                    false,
+                    false
+                ],
+                "S1": [
+                    false,
+                    false
+                ],
+                "UB2": [
+                    false,
+                    false
+                ],
+                "B2": [
+                    false,
+                    false
+                ],
+                "S2": [
+                    false,
+                    false
+                ]
+            },
+            "Weapon10": {
+                "UB3": [
+                    false,
+                    false
+                ],
+                "UB1": [
+                    false,
+                    false
+                ],
+                "S3": [
+                    false,
+                    false
+                ],
+                "B3": [
+                    false,
+                    false
+                ],
+                "B1": [
+                    false,
+                    false
+                ],
+                "S1": [
+                    false,
+                    false
+                ],
+                "UB2": [
+                    false,
+                    false
+                ],
+                "B2": [
+                    false,
+                    false
+                ],
+                "S2": [
+                    false,
+                    false
+                ]
+            },
+            "Weapon4": {
+                "UB3": [
+                    false,
+                    false
+                ],
+                "UB1": [
+                    false,
+                    false
+                ],
+                "S3": [
+                    false,
+                    false
+                ],
+                "B3": [
+                    false,
+                    false
+                ],
+                "B1": [
+                    false,
+                    false
+                ],
+                "S1": [
+                    false,
+                    false
+                ],
+                "UB2": [
+                    false,
+                    false
+                ],
+                "B2": [
+                    false,
+                    false
+                ],
+                "S2": [
+                    false,
+                    false
+                ]
+            },
+            "Weapon15": {
+                "UB3": [
+                    false,
+                    false
+                ],
+                "UB1": [
+                    false,
+                    false
+                ],
+                "S3": [
+                    false,
+                    false
+                ],
+                "B3": [
+                    false,
+                    false
+                ],
+                "B1": [
+                    false,
+                    false
+                ],
+                "S1": [
+                    false,
+                    false
+                ],
+                "UB2": [
+                    false,
+                    false
+                ],
+                "B2": [
+                    false,
+                    false
+                ],
+                "S2": [
+                    false,
+                    false
+                ]
+            },
+            "Weapon18": {
+                "UB3": [
+                    false,
+                    false
+                ],
+                "UB1": [
+                    false,
+                    false
+                ],
+                "S3": [
+                    false,
+                    false
+                ],
+                "B3": [
+                    false,
+                    false
+                ],
+                "B1": [
+                    false,
+                    false
+                ],
+                "S1": [
+                    false,
+                    false
+                ],
+                "UB2": [
+                    false,
+                    false
+                ],
+                "B2": [
+                    false,
+                    false
+                ],
+                "S2": [
+                    false,
+                    false
+                ]
+            },
+            "Weapon2": {
+                "UB3": [
+                    false,
+                    false
+                ],
+                "UB1": [
+                    false,
+                    false
+                ],
+                "S3": [
+                    false,
+                    false
+                ],
+                "B3": [
+                    false,
+                    false
+                ],
+                "B1": [
+                    false,
+                    false
+                ],
+                "S1": [
+                    false,
+                    false
+                ],
+                "UB2": [
+                    false,
+                    false
+                ],
+                "B2": [
+                    false,
+                    false
+                ],
+                "S2": [
+                    false,
+                    false
+                ]
+            },
+            "Weapon13": {
+                "UB3": [
+                    false,
+                    false
+                ],
+                "UB1": [
+                    false,
+                    false
+                ],
+                "S3": [
+                    false,
+                    false
+                ],
+                "B3": [
+                    false,
+                    false
+                ],
+                "B1": [
+                    false,
+                    false
+                ],
+                "S1": [
+                    false,
+                    false
+                ],
+                "UB2": [
+                    false,
+                    false
+                ],
+                "B2": [
+                    false,
+                    false
+                ],
+                "S2": [
+                    false,
+                    false
+                ]
+            },
+            "Weapon5": {
+                "UB3": [
+                    false,
+                    false
+                ],
+                "UB1": [
+                    false,
+                    false
+                ],
+                "S3": [
+                    false,
+                    false
+                ],
+                "B3": [
+                    false,
+                    false
+                ],
+                "B1": [
+                    false,
+                    false
+                ],
+                "S1": [
+                    false,
+                    false
+                ],
+                "UB2": [
+                    false,
+                    false
+                ],
+                "B2": [
+                    false,
+                    false
+                ],
+                "S2": [
+                    false,
+                    false
+                ]
+            },
+            "Weapon9": {
+                "UB3": [
+                    false,
+                    false
+                ],
+                "UB1": [
+                    false,
+                    false
+                ],
+                "S3": [
+                    false,
+                    false
+                ],
+                "B3": [
+                    false,
+                    false
+                ],
+                "B1": [
+                    false,
+                    false
+                ],
+                "S1": [
+                    false,
+                    false
+                ],
+                "UB2": [
+                    false,
+                    false
+                ],
+                "B2": [
+                    false,
+                    false
+                ],
+                "S2": [
+                    false,
+                    false
+                ]
+            }
+        },
+        "Cash": 87525
+    },
+    "Loadout": {
+        "Armor": "StealthArmor",
+        "Gears": [
+            "FAMAS",
+            "FirstAid",
+            "Barrett",
+            "AA12"
+        ]
+    },
+    "EventProgress": {
+        "Hovercraft_HasFirstProgress_": true,
+        "BankApr23_HasOpenedGui_": true,
+        "SoldierApr23_HasOpenedGui_": true,
+        "BankApr23_HasCompleted_": true,
+        "SoldierApr23_Collected": 6,
+        "BankApr23_HasFirstProgress_": true,
+        "Hovercraft_Kills": 9,
+        "BankApr23_Cash": 5000000,
+        "F14_Outposts": 0,
+        "SoldierApr23_HasFirstProgress_": true,
+        "F14_Airdrops": 0,
+        "Hovercraft_HasOpenedGui_": true
+    },
+    "DataLoaded2": true,
+    "Settings": {
+        "AutoCollect": true
+    },
+    "Booster3": false,
+    "HasCheckedForComp": true,
+    "SkinData": {
+        "Weapon21": {
+            "WS": [
+                "Emerald"
+            ],
+            "Skin": false
+        },
+        "Weapon16": {
+            "WS": [],
+            "Skin": false
+        },
+        "Weapon11": {
+            "WS": [
+                "Sapphire"
+            ],
+            "Skin": 1
+        },
+        "Weapon14": {
+            "WS": [],
+            "Skin": false
+        },
+        "Weapon17": {
+            "WS": [],
+            "Skin": false
+        },
+        "Weapon8": {
+            "WS": [],
+            "Skin": false
+        },
+        "Weapon6": {
+            "WS": [],
+            "Skin": false
+        },
+        "Weapon1": {
+            "WS": [],
+            "Skin": false
+        },
+        "Weapon12": {
+            "WS": [],
+            "Skin": false
+        },
+        "Weapon3": {
+            "WS": [],
+            "Skin": false
+        },
+        "Weapon7": {
+            "WS": [],
+            "Skin": false
+        },
+        "Weapon19": {
+            "WS": [],
+            "Skin": false
+        },
+        "Weapon20": {
+            "WS": [
+                "Alien"
+            ],
+            "Skin": 1
+        },
+        "Weapon10": {
+            "WS": [],
+            "Skin": false
+        },
+        "Weapon4": {
+            "WS": [],
+            "Skin": false
+        },
+        "Weapon15": {
+            "WS": [
+                "Claws"
+            ],
+            "Skin": 1
+        },
+        "Weapon18": {
+            "WS": [
+                "Citrine",
+                "Claws"
+            ],
+            "Skin": 2
+        },
+        "Weapon2": {
+            "WS": [],
+            "Skin": false
+        },
+        "Weapon13": {
+            "WS": [],
+            "Skin": false
+        },
+        "Weapon5": {
+            "WS": [],
+            "Skin": false
+        },
+        "Weapon9": {
+            "WS": [],
+            "Skin": false
+        }
+    },
+    "SavedTycoons": "[]",
+    "Eggs": 0,
+    "Rewards": {
+        "DuneBuggy": true
+    },
+    "Unlocks": [],
+    "Bounty": 0,
+    "Credits": 380700,
+    "PlayerState": "Normal",
+    "LastPack": 1682776800,
+    "Rebirth": 26,
+    "LastFreeSpin": 1682768979,
+    "RaidHalo": 1682770881,
+    "VehicleFreeSpin": 1200,
+    "CurrentArmor": "SydArmor",
+    "MainTycoon1": {
+        "BunkerWeapon5": true,
+        "Uniform2": true,
+        "OutsideWalls2": true,
+        "Worker8": true,
+        "Barracks2Roof": true,
+        "Worker3": true,
+        "Worker4": true,
+        "Barracks3Windows": true,
+        "OusidePath5": true,
+        "TurretHelicopter": true,
+        "TurretCorner1": true,
+        "Walls3": true,
+        "Weapon10": true,
+        "Weapon4": true,
+        "Weapon2": true,
+        "Humvee": true,
+        "WeaponWalls3": true,
+        "Lights1": true,
+        "AircraftCarrier": true,
+        "InfantryTurret2": true,
+        "Weapon14": true,
+        "BunkerLights": true,
+        "BoxProtection1": true,
+        "BunkerWorkerWalls": true,
+        "GateTurret1Auto": true,
+        "Armor1": true,
+        "RPGWeapon": true,
+        "Barracks2Walls1": true,
+        "SoldierWalls4": true,
+        "GunTurret2Auto": true,
+        "ATV": true,
+        "Barracks3Roof": true,
+        "Barracks2Lights": true,
+        "OutsideWeapon2": true,
+        "Worker2": true,
+        "GunTurret4": true,
+        "Barracks3Walls2": true,
+        "GarageLights": true,
+        "UnlockBunker": true,
+        "Boat": true,
+        "SoldierLights": true,
+        "JetSki": true,
+        "AntiAircraft": true,
+        "Weapon15": true,
+        "WeaponWalls1": true,
+        "GunTurret2": true,
+        "TurretCorner2": true,
+        "Weapon11": true,
+        "SoldierRoof": true,
+        "GuidedMissile": true,
+        "RailgunBattery1": true,
+        "GunTurret1Auto": true,
+        "Truck": true,
+        "DockContainers": true,
+        "HeavyTurret2_U2": true,
+        "ReinforcedGate1": true,
+        "OusidePath4": true,
+        "Barracks2Worker1": true,
+        "BunkerWeapon2": true,
+        "Snowmobile": true,
+        "Walls4": true,
+        "SoldierBase": true,
+        "ElectricFence": true,
+        "BunkerWeapon4": true,
+        "Barracks3Worker1": true,
+        "Weapon13": true,
+        "TurretWall4": true,
+        "SecondRebirthWeapon4": true,
+        "Bomber": true,
+        "Barracks2Walls2": true,
+        "InfantryTurret2_U5": true,
+        "Armor6": true,
+        "InfantryTurret1": true,
+        "BunkerWorker3": true,
+        "Uniform1": true,
+        "SecondRebirthWeapon1": true,
+        "GuardSpawn1": true,
+        "BunkerOwnerDoor2": true,
+        "Warplane": true,
+        "Barracks2Walls3": true,
+        "GarageWalls1N": true,
+        "Walls1": true,
+        "BunkerWorker1": true,
+        "Submarine": true,
+        "InfantryTurret1_U5": true,
+        "InfantryTurret1_U3": true,
+        "BunkerWorker4": true,
+        "Worker1": true,
+        "Airplane2": true,
+        "Melee1": true,
+        "Soldier3": true,
+        "OutsideWeapon3": true,
+        "SecondRebirthWeapon2": true,
+        "Armor3": true,
+        "VehicleRepair": true,
+        "Barracks3Worker2": true,
+        "OutsideGate3": true,
+        "Spitfire": true,
+        "InfantryTurret2_U3": true,
+        "Soldier2": true,
+        "WeaponWalls2": true,
+        "TurretChinook": true,
+        "Uniform4": true,
+        "APC": true,
+        "HeavyTurret3_U1": true,
+        "Weapon7": true,
+        "AATank": true,
+        "OusidePath1": true,
+        "PlaneSpawn": true,
+        "Weapon12": true,
+        "GunTurret3": true,
+        "TurretWall1": true,
+        "Fence2": true,
+        "Barracks1Walls3": true,
+        "Airplane": true,
+        "TurretCorner3": true,
+        "OutsideWalls1": true,
+        "BunkerOwnerDoor3": true,
+        "GarageWindows1": true,
+        "SecondRebirthWeapon5": true,
+        "Weapon3": true,
+        "Barracks3Lights": true,
+        "Jeep": true,
+        "InfantryTurret2_U2": true,
+        "HeavyTurret2_U1": true,
+        "SoldierRails": true,
+        "Barracks2Worker2": true,
+        "DockRails": true,
+        "Barracks1Walls2": true,
+        "Walls6": true,
+        "Worker5": true,
+        "TurretWall2": true,
+        "Worker6": true,
+        "Weapon5": true,
+        "ManualWorker": true,
+        "HelicopterRails1N": true,
+        "BunkerOwnerDoor4": true,
+        "Soldier1": true,
+        "InfantryTurret1_U2": true,
+        "Stairs1": true,
+        "OusidePath2": true,
+        "Chinook": true,
+        "Worker7": true,
+        "Walls8": true,
+        "Flag": true,
+        "Bunker": true,
+        "OwnerDoor2": true,
+        "StairWalls1": true,
+        "OusidePath3": true,
+        "DroneComputer": true,
+        "Barracks1Windows": true,
+        "OutsideWeapon1": true,
+        "Windows1": true,
+        "SoldierWalls3": true,
+        "Barracks1Walls1": true,
+        "Floor2": true,
+        "Artillery": true,
+        "SoldierWalls1": true,
+        "InfantryTurret2_U1": true,
+        "Barracks3Walls3": true,
+        "Barracks1Worker2": true,
+        "BunkerWeapon1": true,
+        "HeavyTurret2": true,
+        "HeavyTurret1_U1": true,
+        "HeavyTurret3_U2": true,
+        "Roof": true,
+        "Fence1": true,
+        "Uniform5": true,
+        "OwnerDoor1": true,
+        "StairWalls2": true,
+        "GunTurret3Auto": true,
+        "BunkerWorker2": true,
+        "BunkerGunWalls": true,
+        "GarageRoad": true,
+        "BunkerWorker5": true,
+        "HeavyTurret1_U2": true,
+        "GunBoat": true,
+        "Gadget1": true,
+        "SecondRebirthWeapon3": true,
+        "AttackHelicopter": true,
+        "OutsideGate": true,
+        "TurretWall3": true,
+        "GuardSpawn2": true,
+        "BunkerOwnerDoor": true,
+        "Weapon6": true,
+        "Barracks1Lights": true,
+        "Barracks1Worker1": true,
+        "Weapon1": true,
+        "Barracks3Worker3": true,
+        "Walls7": true,
+        "BoatSpawn": true,
+        "BalconyLights": true,
+        "OutsideWalls3": true,
+        "Armor4": true,
+        "Loadout": true,
+        "Armor2": true,
+        "Helicopter": true,
+        "ArmoredSnowmobile": true,
+        "InfantryTurret2_U4": true,
+        "GarageWalls2N": true,
+        "RailGun": true,
+        "Weapon9": true,
+        "Hovercraft": true,
+        "Uniform3": true,
+        "InfantryTurret1_U1": true,
+        "Walls2": true,
+        "LandingPlatform1N": true,
+        "Walls5": true,
+        "GunTurret1": true,
+        "HelicopterSpawn1N": true,
+        "HeavyTurret3": true,
+        "TurretTruck": true,
+        "Weapon8": true,
+        "GaragePlatform": true,
+        "GarageRoof1N": true,
+        "ArmorJeep": true,
+        "OutsideGate2": true,
+        "TrainingDesk": true,
+        "GunTurret4Auto": true,
+        "GateTurret1": true,
+        "SoldierWindows": true,
+        "Barracks1Roof": true,
+        "Soldier4": true,
+        "Armor5": true,
+        "OusidePath6": true,
+        "Barracks3Walls1": true,
+        "InfantryTurret1_U4": true,
+        "Melee2": true,
+        "Barracks2Windows": true,
+        "Melee3": true,
+        "Windows2": true,
+        "HeavyTurret1": true,
+        "BunkerWeapon3": true,
+        "GateTruss": true,
+        "Lights2": true,
+        "SoldierWalls2": true
+    },
+    "Quest3": 8,
+    "CashBoost": 11379,
+    "HasOpenedVehicleMenu2": true,
+    "Rank": 4,
+    "Inventory": {
+        "4f6ec21d-0e95-4858-adb5-2323381a0a81": {
+            "Type": "Private",
+            "Name": "Levin",
+            "Skin": "Soldier1",
+            "Class": "Soldier",
+            "Level": 4,
+            "XP": 6675.512239217758,
+            "Income": 1
+        },
+        "1ad077e5-89e3-46dc-9239-6c11375f77c1": {
+            "Type": "Heavy",
+            "Income": 1,
+            "Skin": "Soldier1",
+            "Class": "Soldier",
+            "Level": 2,
+            "XP": 2228.061463832855,
+            "Name": "Ferdie"
+        },
+        "280afd6c-d33e-4a0f-9ee0-b3578ddbf4c7": {
+            "Stars": 1,
+            "Type": "Sniper",
+            "Income": 1,
+            "Class": "Soldier",
+            "Level": 1,
+            "XP": 0,
+            "Name": "Stanfield"
+        },
+        "6ef9f55d-9f86-4bfc-8840-755bfe7d86e8": {
+            "Type": "Super Sniper",
+            "Income": 1,
+            "Skin": "Soldier1",
+            "Class": "Soldier",
+            "Level": 1,
+            "XP": 69.92206120491028,
+            "Name": "Micheil"
+        },
+        "d73f1b05-cda5-4a3e-b22f-f030ed9ef0db": {
+            "Type": "Sniper",
+            "Income": 1,
+            "Class": "Soldier",
+            "Level": 1,
+            "XP": 0,
+            "Name": "Marve"
+        },
+        "72a08b91-10d6-4859-88e2-239723ef1c5c": {
+            "Type": "Ace Pilot",
+            "Income": 1,
+            "Class": "Soldier",
+            "Level": 1,
+            "XP": 0,
+            "Name": "Skye"
+        },
+        "39aa98f1-0fa0-4654-a4d1-4df3a5f17e94": {
+            "Type": "Raid Soldier",
+            "Income": 1,
+            "Skin": "Soldier1",
+            "Class": "Soldier",
+            "Level": 2,
+            "XP": 1341.1548688411713,
+            "Name": "Adair"
+        },
+        "b8fa5079-54d3-4622-bd0a-dc9582a4e418": {
+            "Type": "Heavy",
+            "Income": 1,
+            "Skin": "Soldier1",
+            "Class": "Soldier",
+            "Level": 2,
+            "XP": 2022.1122674942017,
+            "Name": "Diego"
+        },
+        "742a65de-6258-4040-a2db-c58b40d52cff": {
+            "Type": "Private",
+            "Name": "Rinaldo",
+            "Skin": "Soldier1",
+            "Class": "Soldier",
+            "Level": 1,
+            "XP": 0,
+            "Income": 1
+        },
+        "a9f555e7-d23d-4200-b517-43fb0612e000": {
+            "Type": "Heavy",
+            "Income": 1,
+            "Class": "Soldier",
+            "Level": 1,
+            "XP": 0,
+            "Name": "Augustin"
+        },
+        "e02a499a-07c5-4509-a153-fbef53a2148f": {
+            "Type": "Naval Officer",
+            "Income": 1,
+            "Skin": "Soldier1",
+            "Class": "Soldier",
+            "Level": 2,
+            "XP": 1582.4111349582673,
+            "Name": "Christy"
+        },
+        "19b4320e-87fd-4e0a-ad67-632740b6dcc0": {
+            "Type": "Medic",
+            "Income": 1,
+            "Class": "Soldier",
+            "Level": 1,
+            "XP": 0,
+            "Name": "Beauregard"
+        },
+        "90cb7022-3be0-451e-9e51-c6cc7c067270": {
+            "Stars": 1,
+            "Type": "Medic",
+            "Name": "Sivert",
+            "Skin": "Soldier1",
+            "Class": "Soldier",
+            "Level": 4,
+            "XP": 7554.622444868088,
+            "Income": 1
+        }
+    },
+    "Pack": 3,
+    "AppliedSkins": [],
+    "VehicleParts": {
+        "DiveBomber_Back Wings": true,
+        "AbramTankAir_AA Gun": true,
+        "MissileTruck_Body Front": true,
+        "T90_TankGun": true,
+        "AAV_Body Part 2": true,
+        "B-17_Engines": true,
+        "T90_Wheels": true,
+        "Carrier_Front Body": true,
+        "T90_Tracks": true,
+        "DiveBomber_Body": true,
+        "Carrier_Carrier Bay": true,
+        "T90_Lights": true,
+        "DiveBomber_Wheels": true,
+        "T90_MG": true,
+        "AbramTankAir_Turret": true,
+        "T90_Turret": true,
+        "B-17_Rear Tower": true,
+        "DiveBomber_First Wing": true,
+        "DiveBomber_Second Wing": true,
+        "AbramTankAir_Tracks": true,
+        "AbramTankAir_Misc": true,
+        "DiveBomber_Engine": true,
+        "AAV_Body Part 1": true,
+        "B-17_Second Wing": true,
+        "B-17_First Wing": true,
+        "AAV_Body Part 3": true,
+        "B-17_Front Body": true,
+        "AbramTankAir_Body Part 1": true,
+        "Carrier_Bridge": true,
+        "DiveBomber_Cockpit": true,
+        "T90_Body": true
+    },
+    "Quest1": 2,
+    "Tycoon": [],
+    "Cases": {
+        "Overpowered": 0,
+        "Basic": 2,
+        "Epic": 0,
+        "Rare": 0,
+        "Omega": 0,
+        "Advanced": 0
+    },
+    "Requests": true,
+    "MaxTarget": "e02a499a-07c5-4509-a153-fbef53a2148f",
+    "Kills": 10,
+    "Tokens": 0,
+    "CodesUsed": {
+        "hollidayu": true,
+        "newplane": true,
+        "900klikes": true,
+        "550klikes": true,
+        "600klikes": true,
+        "f16": true,
+        "fixes": true,
+        "950klikes": true
+    },
+    "DailyQuestsInit": true,
+    "Soldier3": "b8fa5079-54d3-4622-bd0a-dc9582a4e418",
+    "Task": 6,
+    "XPBoost": 0,
+    "MaxSoldiers": 50,
+    "DataStep": 0,
+    "FirstTime": false,
+    "Region": "LT",
+    "DailyRewards": {
+        "Streak": 2,
+        "RewardTime": 1655725526
+    },
+    "WarKills": 0,
+    "LastChosen": "Malaysia",
+    "XmasGifts": 208,
+    "VehicleSkins": [],
+    "Quest2": 10,
+    "TotalSessions": 196,
+    "Soldier2": "39aa98f1-0fa0-4654-a4d1-4df3a5f17e94",
+    "DevProducts": [],
+    "HasPorted9": true,
+    "Queued": false,
+    "Cash": 1280496
+}
